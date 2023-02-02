@@ -5,7 +5,8 @@
   width: 100%;
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   background: linear-gradient(0deg, #f9e8f8 0%, #ffffff 100%);
 }

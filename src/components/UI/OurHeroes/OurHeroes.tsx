@@ -51,10 +51,10 @@ const OurHeroes = () => {
         </ul>
       </nav>
       <div className={styles.herosWrapper}>
-        {heros.map((element) => {
+        {heros.map((element, index) => {
           const { background, imgCharacter, characterName, universe } = element;
           return (
-            <div className={styles.hero}>
+            <div key={index} className={styles.hero}>
               <div
                 style={{ backgroundColor: `${background}` }}
                 className={styles.hero__base}
