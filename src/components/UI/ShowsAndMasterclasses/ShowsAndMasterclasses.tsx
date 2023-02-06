@@ -5,7 +5,7 @@ import Button from '../Button';
 
 const ShowsAndMasterclasses = () => {
   return (
-    <div className={`${styles.sahowsAndMasterclasses} ${styles.container}`}>
+    <section className={`${styles.sahowsAndMasterclasses} ${styles.container}`}>
       <h1 className={styles.title}>Шоу и мастерклассы</h1>
       <div className={styles.examplesWorks}>
         {examplesWorksData.map((element, index) => {
@@ -22,8 +22,8 @@ const ShowsAndMasterclasses = () => {
           );
         })}
       </div>
-      <Button className={styles.btnShow}>Показать ещё</Button>
-    </div>
+      <Button className={styles.btnShow}>{`Показать ещё >>`}</Button>
+    </section>
   );
 };
 

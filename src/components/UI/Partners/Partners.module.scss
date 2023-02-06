@@ -1,0 +1,16 @@
+@import '../../../styles/App.scss';
+
+.partners {
+  display: flex;
+
+  background-color: #ffffff;
+}
+
+.title {
+  max-width: 240px;
+
+  font-weight: 700;
+  font-size: 30px;
+
+  color: #000000;
+}
