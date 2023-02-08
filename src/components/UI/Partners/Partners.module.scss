@@ -14,3 +14,26 @@
 
   color: #000000;
 }
+
+.affiliatePrograms {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 48px;
+
+  border-radius: 20px;
+
+  color: #ffffff;
+}

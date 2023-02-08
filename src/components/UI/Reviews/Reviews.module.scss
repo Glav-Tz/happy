@@ -1,0 +1,30 @@
+@import '../../../styles/App.scss';
+
+.reviews {
+  padding: 150px 10px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  background: linear-gradient(180deg, #f9e9f7 0%, #ffffff 100%);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 48px;
+
+  color: #000000;
+}
+
+.reviewsVK {
+  margin: 50px 0 0 0;
+
+  width: 900px;
+  height: 790px;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(211, 46, 135, 0.2);
+}
