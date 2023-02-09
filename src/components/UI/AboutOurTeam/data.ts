@@ -1,4 +1,4 @@
-const careuselValue = [
+const dataOfCarusel = [
   {
     bgColor: '#FCA91F',
   },
@@ -16,4 +16,4 @@ const careuselValue = [
   },
 ];
 
-export default careuselValue;
+export default dataOfCarusel;

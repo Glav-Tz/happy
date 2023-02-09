@@ -1,25 +1,37 @@
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+/* eslint-disable react/button-has-type */
+import AliceCarousel from 'react-alice-carousel';
+import { useEffect, useRef, useState } from 'react';
 
 import { ReactComponent as PlayIcon } from '../../../assets/icon/play.svg';
 
+import 'react-alice-carousel/lib/alice-carousel.css';
+
 import Button from '../Button';
 import Partners from '../Partners';
-import careuselValue from './data';
 import styles from './AboutOurTeam.module.scss';
+import CareuselValue from './component';
+import dataOfCarusel from './data';
 
 const responsive = {
-  desktop: {
-    breakpoint: {
-      max: 3000,
-      min: 0,
-    },
-    items: 1,
-    partialVisibilityGutter: 40,
-  },
+  0: { items: 1 },
+  568: { items: 1 },
+  1024: { items: 1 },
 };
 
 const AboutOurTeam = () => {
+  const carousel = useRef<AliceCarousel>(null);
+  const [arrElementsOfSlider, setArrElementsOfSlider] = useState<JSX.Element[]>(
+    [],
+  );
+
+  useEffect(() => {
+    const result = dataOfCarusel.map((item, index) => {
+      const { bgColor } = item;
+      return <CareuselValue key={index} bgColor={bgColor} />;
+    });
+    setArrElementsOfSlider([...result]);
+  }, []);
+
   return (
     <section className={`${styles.aboutOurTeam} ${styles.container}`}>
       <h1 className={styles.title}>О нас</h1>
@@ -44,46 +56,28 @@ const AboutOurTeam = () => {
           </Button>
         </div>
 
-        <Carousel
-          className={styles.sliderTeam}
-          additionalTransfrom={0}
-          arrows
-          autoPlaySpeed={3000}
-          centerMode={false}
-          containerClass="container"
-          dotListClass=""
-          draggable
-          focusOnSelect={false}
-          infinite={false}
-          itemClass=""
-          keyBoardControl
-          minimumTouchDrag={80}
-          pauseOnHover
-          renderArrowsWhenDisabled={false}
-          renderButtonGroupOutside={false}
-          renderDotsOutside={false}
-          responsive={responsive}
-          rewind={false}
-          rewindWithAnimation={false}
-          rtl={false}
-          shouldResetAutoplay
-          showDots={false}
-          sliderClass=""
-          slidesToSlide={1}
-          swipeable
-        >
-          {careuselValue.map((element) => {
-            const { bgColor } = element;
-            return (
-              <div
-                style={{ backgroundColor: `${bgColor}` }}
-                className={styles.foroTeam}
-              />
-            );
-          })}
-        </Carousel>
-      </div>
+        <div className={styles.sliderTeam}>
+          <AliceCarousel
+            autoPlayStrategy="default"
+            disableDotsControls
+            disableButtonsControls
+            mouseTracking
+            items={arrElementsOfSlider}
+            responsive={responsive}
+            animationDuration={2000}
+            ref={carousel}
+          />
 
+          <div key="btns" className="b-refs-buttons">
+            <button onClick={(e) => carousel?.current?.slidePrev(e)}>
+              Prev
+            </button>
+            <button onClick={(e) => carousel?.current?.slideNext(e)}>
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
       <Partners />
     </section>
   );

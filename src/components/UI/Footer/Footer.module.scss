@@ -1,2 +1,46 @@
+@import '../../../styles/App.scss';
+
 .footer {
+  margin-top: 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 18px;
+
+  color: #000000;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.privacyPolicy {
+  text-decoration: none;
+  color: #000000;
+}
+
+.socialNetwork {
+  display: flex;
+
+  max-width: 230px;
+  padding: 3px 20px;
+  width: 100%;
+  gap: 20px;
+
+  align-items: center;
+
+  border-radius: 20px;
+}
+
+.socialIcon {
+  display: flex;
+  justify-content: center;
+
+  max-width: 32px;
+  width: 100%;
+
+  cursor: pointer;
 }

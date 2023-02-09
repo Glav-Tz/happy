@@ -10,6 +10,7 @@
 
 .wrapperBlok {
   display: flex;
+  gap: 50px;
 }
 
 .title {
@@ -45,6 +46,8 @@
   &__desc {
     margin: 50px 0 0 0;
     max-width: 630px;
+
+    line-height: 170%;
   }
 
   &__moreDetailed {
@@ -60,12 +63,5 @@
 }
 
 .sliderTeam {
-  max-width: 455px;
-}
-
-.foroTeam {
-  width: 400px;
-  height: 400px;
-
-  border-radius: 50%;
+  max-width: 400px;
 }

@@ -5,13 +5,13 @@ import { ReactComponent as TelegramIcon } from '../../../assets/icon/color/te.sv
 import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/color/wa.svg';
 import Button from '../Button';
 
+const handleSubmit = (event: SyntheticEvent) => {
+  console.log('ушло в небытье');
+  event.preventDefault();
+};
+
 const Consultation = () => {
   const [phone, setPhone] = useState('');
-
-  const handleSubmit = (event: SyntheticEvent) => {
-    console.log('ушло в небытье');
-    event.preventDefault();
-  };
 
   return (
     <section className={styles.consultation}>

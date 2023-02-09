@@ -1,59 +1,40 @@
-import Carousel from 'react-multi-carousel';
-import careuselValueCollectionVideos from './data';
+import AliceCarousel from 'react-alice-carousel';
+import { useEffect, useState } from 'react';
+
+import dataOfCarusel from './data';
 import styles from './CollectionVideos.module.scss';
+import CareuselValue from './component';
 
 const responsive = {
-  desktop: {
-    breakpoint: {
-      max: 3000,
-      min: 0,
-    },
-    items: 4,
-  },
+  0: { items: 1 },
+  568: { items: 2 },
+  1024: { items: 4 },
 };
 
 const CollectionVideos = () => {
+  const [arrElementsOfSlider, setArrElementsOfSlider] = useState<JSX.Element[]>(
+    [],
+  );
+
+  useEffect(() => {
+    const result = dataOfCarusel.map((item, index) => {
+      const { text } = item;
+      return <CareuselValue key={index} text={text} />;
+    });
+    setArrElementsOfSlider([...result]);
+  }, []);
+
   return (
     <section className={`${styles.collectionVideos} ${styles.container}`}>
       <h1 className={styles.title}>Видео с праздинков</h1>
-      <Carousel
-        additionalTransfrom={0}
-        arrows
-        autoPlaySpeed={3000}
-        centerMode={false}
-        className=""
-        containerClass="container"
-        dotListClass=""
-        draggable
-        focusOnSelect={false}
-        infinite
-        itemClass=""
-        keyBoardControl
-        minimumTouchDrag={80}
-        pauseOnHover
-        renderArrowsWhenDisabled={false}
-        renderButtonGroupOutside={false}
-        renderDotsOutside={false}
+      <AliceCarousel
+        autoPlayStrategy="default"
+        disableDotsControls
+        mouseTracking
+        items={arrElementsOfSlider}
         responsive={responsive}
-        rewind={false}
-        rewindWithAnimation={false}
-        rtl={false}
-        shouldResetAutoplay
-        showDots={false}
-        sliderClass=""
-        slidesToSlide={1}
-        swipeable
-      >
-        {careuselValueCollectionVideos.map((element, index) => {
-          const { text } = element;
-          console.log(123);
-          return (
-            <div key={index} className={styles.video}>
-              {text}
-            </div>
-          );
-        })}
-      </Carousel>
+        animationDuration={2000}
+      />
     </section>
   );
 };

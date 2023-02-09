@@ -1,3 +1,4 @@
+import WeAreTouch from '../WeAreTouch';
 import styles from './Contacts.module.scss';
 
 const Contacts = () => {
@@ -9,6 +10,7 @@ const Contacts = () => {
         написать в удобный Вам мессенджер или оставить свой номер, чтобы мы сами
         Вам перезвонили ;)
       </div>
+      <WeAreTouch />
     </section>
   );
 };
