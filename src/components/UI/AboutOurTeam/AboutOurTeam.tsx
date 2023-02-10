@@ -71,18 +71,18 @@ const AboutOurTeam = () => {
           />
           <div className={styles.castomBtnCarusel}>
             <button
-              className={styles.btnCarusel}
+              className={styles.castomBtnCarusel__btnCarusel}
               type="button"
               onClick={(e) => carousel?.current?.slidePrev(e)}
             >
-              <RightArrow />
+              <LeftArrow />
             </button>
             <button
-              className={styles.btnCarusel}
+              className={styles.castomBtnCarusel__btnCarusel}
               type="button"
               onClick={(e) => carousel?.current?.slideNext(e)}
             >
-              <LeftArrow />
+              <RightArrow />
             </button>
           </div>
         </div>

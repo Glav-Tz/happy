@@ -5,18 +5,19 @@
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   color: #ffffff;
-  transform: translateY(40px);
+  transform: translateY(130px);
   z-index: 1;
 }
 
 .socialNetwork {
-  display: flex;
-
-  max-width: 230px;
+  min-width: 230px;
+  min-height: 50px;
   padding: 3px 20px;
-  width: 100%;
+
+  display: flex;
   gap: 20px;
 
   align-items: center;
@@ -36,12 +37,11 @@
 }
 
 .contactPhone {
-  display: flex;
-
-  max-width: 230px;
+  min-height: 50px;
+  min-width: 230px;
   padding: 3px 10px;
-  width: 100%;
 
+  display: flex;
   align-items: center;
 
   border-radius: 20px;
@@ -63,7 +63,6 @@
 
 .navigate {
   margin: 0px 50px;
-  padding: 0px 30px;
   width: 100%;
 
   display: flex;
@@ -73,22 +72,14 @@
   border-radius: 20px;
   background-color: #000000;
 
-  &__ul {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-  }
-
   &__link {
     display: flex;
     align-items: center;
 
     font-weight: 700;
     font-size: 16px;
+
+    text-align: center;
 
     text-decoration: none;
     color: #ffffff;
@@ -99,10 +90,21 @@
   .navigateBlock_one {
     display: flex;
     align-items: center;
+    gap: 30px;
+  }
+
+  .logo {
+    height: 130px;
+    width: 430px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .navigateBlock_two {
     display: flex;
     align-items: center;
+    gap: 30px;
   }
 }

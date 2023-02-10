@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import styles from './Header.module.scss';
 
-import { ReactComponent as VkIcon } from '../../../assets/icon/vk.svg';
-import { ReactComponent as InstagramIcon } from '../../../assets/icon/inst.svg';
-import { ReactComponent as TelegramIcon } from '../../../assets/icon/tele.svg';
-import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/wa.svg';
+import { ReactComponent as VkIcon } from '../../../assets/icon/messengers/vk.svg';
+import { ReactComponent as InstagramIcon } from '../../../assets/icon/messengers/inst.svg';
+import { ReactComponent as TelegramIcon } from '../../../assets/icon/messengers/tele.svg';
+import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/messengers/wa.svg';
 import { ReactComponent as PhoneIcon } from '../../../assets/icon/phone.svg';
+import { ReactComponent as Logo } from '../../../assets/icon/logo.svg';
 
 const Header = () => {
   return (
@@ -27,43 +28,31 @@ const Header = () => {
 
       <nav className={styles.navigate}>
         <div className={styles.navigateBlock_one}>
-          <ul className={styles.navigate__ul}>
-            <li>
-              <a className={styles.navigate__link} href="#">
-                Наши герои
-              </a>
-            </li>
-            <li>
-              <a className={styles.navigate__link} href="#">
-                Шоу и мастерклассы
-              </a>
-            </li>
-            <li>
-              <a className={styles.navigate__link} href="#">
-                О нас
-              </a>
-            </li>
-          </ul>
+          <a className={styles.navigate__link} href="#">
+            Наши герои
+          </a>
+          <a className={styles.navigate__link} href="#">
+            Шоу и мастерклассы
+          </a>
+          <a className={styles.navigate__link} href="#">
+            О нас
+          </a>
+        </div>
+
+        <div className={styles.logo}>
+          <Logo />
         </div>
 
         <div className={styles.navigateBlock_two}>
-          <ul className={styles.navigate__ul}>
-            <li>
-              <a className={styles.navigate__link} href="#">
-                Видео с праздников
-              </a>
-            </li>
-            <li>
-              <a className={styles.navigate__link} href="#">
-                Отзывы
-              </a>
-            </li>
-            <li>
-              <a className={styles.navigate__link} href="#">
-                Контакты
-              </a>
-            </li>
-          </ul>
+          <a className={styles.navigate__link} href="#">
+            Видео с праздников
+          </a>
+          <a className={styles.navigate__link} href="#">
+            Отзывы
+          </a>
+          <a className={styles.navigate__link} href="#">
+            Контакты
+          </a>
         </div>
       </nav>
 

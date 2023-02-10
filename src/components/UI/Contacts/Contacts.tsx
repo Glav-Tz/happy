@@ -10,6 +10,9 @@ const Contacts = () => {
         написать в удобный Вам мессенджер или оставить свой номер, чтобы мы сами
         Вам перезвонили ;)
       </div>
+      <div className={styles.map}>
+        <span>123</span>
+      </div>
       <WeAreTouch />
     </section>
   );

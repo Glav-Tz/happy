@@ -5,7 +5,11 @@ type Props = {
 };
 
 const CareuselValue = ({ text }: Props) => {
-  return <div className={styles.video}>{text}</div>;
+  return (
+    <div className={styles.wrapperVideo}>
+      <div className={styles.video}>{text}</div>
+    </div>
+  );
 };
 
 export default CareuselValue;

@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import styles from './Footer.module.scss';
 
-import { ReactComponent as VkIcon } from '../../../assets/icon/vk.svg';
-import { ReactComponent as InstagramIcon } from '../../../assets/icon/inst.svg';
-import { ReactComponent as TelegramIcon } from '../../../assets/icon/tele.svg';
-import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/wa.svg';
+import { ReactComponent as VkIcon } from '../../../assets/icon/messengers/vk.svg';
+import { ReactComponent as InstagramIcon } from '../../../assets/icon/messengers/inst.svg';
+import { ReactComponent as TelegramIcon } from '../../../assets/icon/messengers/tele.svg';
+import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/messengers/wa.svg';
 
 const Footer = () => {
   return (

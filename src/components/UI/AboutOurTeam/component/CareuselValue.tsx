@@ -6,10 +6,12 @@ type Props = {
 
 const CareuselValue = ({ bgColor }: Props) => {
   return (
-    <div
-      style={{ backgroundColor: `${bgColor}` }}
-      className={styles.foroTeam}
-    />
+    <div className={styles.wrapperFotoTeam}>
+      <div
+        style={{ backgroundColor: `${bgColor}` }}
+        className={styles.foroTeam}
+      />
+    </div>
   );
 };
 
