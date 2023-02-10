@@ -1,10 +1,12 @@
-/* eslint-disable react/button-has-type */
 import AliceCarousel from 'react-alice-carousel';
 import { useEffect, useRef, useState } from 'react';
 
 import { ReactComponent as PlayIcon } from '../../../assets/icon/play.svg';
 
 import 'react-alice-carousel/lib/alice-carousel.css';
+
+import { ReactComponent as LeftArrow } from '../../../assets/icon/arrow/left_arrow.svg';
+import { ReactComponent as RightArrow } from '../../../assets/icon/arrow/right_arrow.svg';
 
 import Button from '../Button';
 import Partners from '../Partners';
@@ -67,13 +69,20 @@ const AboutOurTeam = () => {
             animationDuration={2000}
             ref={carousel}
           />
-
-          <div key="btns" className="b-refs-buttons">
-            <button onClick={(e) => carousel?.current?.slidePrev(e)}>
-              Prev
+          <div className={styles.castomBtnCarusel}>
+            <button
+              className={styles.btnCarusel}
+              type="button"
+              onClick={(e) => carousel?.current?.slidePrev(e)}
+            >
+              <RightArrow />
             </button>
-            <button onClick={(e) => carousel?.current?.slideNext(e)}>
-              Next
+            <button
+              className={styles.btnCarusel}
+              type="button"
+              onClick={(e) => carousel?.current?.slideNext(e)}
+            >
+              <LeftArrow />
             </button>
           </div>
         </div>
