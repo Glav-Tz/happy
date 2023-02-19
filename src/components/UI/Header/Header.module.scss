@@ -1,15 +1,27 @@
 @import '../../../styles/App.scss';
 
-.header {
+.wrapperSticky {
   position: sticky;
+  top: 0;
+
+  min-height: 150px;
+
+  display: flex;
+  align-items: center;
+
+  transform: translateY(150px);
+  z-index: 1;
+}
+
+.header {
+  width: 100%;
+  padding: 0px 30px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   color: #ffffff;
-  transform: translateY(130px);
-  z-index: 1;
 }
 
 .socialNetwork {
@@ -62,8 +74,12 @@
 }
 
 .navigate {
-  margin: 0px 50px;
+  max-height: 50px;
+  max-width: 1360px;
+
   width: 100%;
+
+  padding: 0 20px;
 
   display: flex;
   justify-content: space-between;

@@ -7,17 +7,21 @@ import { ReactComponent as InstagramIcon } from '../../../assets/icon/color/inst
 import Button from '../Button';
 import styles from './WeAreTouch.module.scss';
 
+type Props = {
+  className?: string;
+};
+
 const handleSubmit = (event: SyntheticEvent) => {
   console.log('ушло в небытье');
   event.preventDefault();
 };
 
-const WeAreTouch = () => {
+const WeAreTouch = ({ className }: Props) => {
   const [mail, setMail] = useState('');
   const [requestText, setRequestText] = useState('');
-
+  const externalClasses = [styles.weAreTouch, className];
   return (
-    <form className={styles.weAreTouch} onSubmit={handleSubmit}>
+    <form className={externalClasses.join(' ')} onSubmit={handleSubmit}>
       <div className={styles.title}>Мы на связи!</div>
       <div className={styles.wrapperSocialNetwork}>
         <Button className={styles.messengersWatsApp}>

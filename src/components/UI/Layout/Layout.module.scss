@@ -1,1 +1,13 @@
+@import '../../../styles/App.scss';
 
+.wrapperSticky {
+  position: sticky;
+  top: 0;
+
+  min-height: 150px;
+
+  display: flex;
+  align-items: center;
+
+  background-color: transparent;
+}
