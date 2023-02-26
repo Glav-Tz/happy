@@ -1,29 +1,18 @@
+/* eslint-disable global-require */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import styles from './Header.module.scss';
 
-import { ReactComponent as VkIcon } from '../../../assets/icon/messengers/vk.svg';
-import { ReactComponent as InstagramIcon } from '../../../assets/icon/messengers/inst.svg';
-import { ReactComponent as TelegramIcon } from '../../../assets/icon/messengers/tele.svg';
-import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/messengers/wa.svg';
+import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/messengers/color/wa.svg';
 import { ReactComponent as PhoneIcon } from '../../../assets/icon/phone.svg';
-import { ReactComponent as Logo } from '../../../assets/icon/logo.svg';
 
 const Header = () => {
   return (
     <div className={`${styles.wrapperSticky} ${styles.container}`}>
       <header className={`${styles.header} ${styles.container}`}>
         <div className={styles.socialNetwork}>
+          <WhatsAppIcon />
           <a className={styles.socialIcon} href="#">
-            <VkIcon />
-          </a>
-          <a className={styles.socialIcon} href="#">
-            <InstagramIcon />
-          </a>
-          <a className={styles.socialIcon} href="#">
-            <TelegramIcon />
-          </a>
-          <a className={styles.socialIcon} href="#">
-            <WhatsAppIcon />
+            Написать WhatsApp
           </a>
         </div>
 
@@ -40,9 +29,11 @@ const Header = () => {
             </a>
           </div>
 
-          <div className={styles.logo}>
-            <Logo />
-          </div>
+          <img
+            className={styles.logo}
+            src={require('../../../assets/img/logo.png')}
+            alt="logo"
+          />
 
           <div className={styles.navigateBlock_two}>
             <a className={styles.navigate__link} href="#">

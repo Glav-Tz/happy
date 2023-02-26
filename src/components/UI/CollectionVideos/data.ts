@@ -1,18 +1,18 @@
 const careuselValueCollectionVideos = [
   {
-    text: 'Video',
+    nameVideo: 'video_1',
   },
   {
-    text: 'Video',
+    nameVideo: 'video_1',
   },
   {
-    text: 'Video',
+    nameVideo: 'video_1',
   },
   {
-    text: 'Video',
+    nameVideo: 'video_1',
   },
   {
-    text: 'Video',
+    nameVideo: 'video_1',
   },
 ];
 

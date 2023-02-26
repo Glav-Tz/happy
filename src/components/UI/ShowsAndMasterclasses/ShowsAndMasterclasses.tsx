@@ -1,6 +1,8 @@
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
 import styles from './ShowsAndMasterclasses.module.scss';
 
-import { examplesWorksData, BASE_IMG_URL_SHOW } from './data';
+import examplesWorksData from './data';
 import Button from '../Button';
 
 const ShowsAndMasterclasses = () => {
@@ -14,7 +16,7 @@ const ShowsAndMasterclasses = () => {
             <div key={index} className={styles.example}>
               <img
                 className={styles.example__img}
-                src={`${BASE_IMG_URL_SHOW}${imgWorks}`}
+                src={require(`../../../assets/img/ShowsAndMasterclasses/${imgWorks}.png`)}
                 alt="examples of works"
               />
               <span className={styles.example__desc}>{titleWorks}</span>

@@ -1,73 +1,38 @@
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import styles from './OurHeroes.module.scss';
-import { heros, BASE_IMG_URL } from './data';
+import { heros, categories } from './data';
 
 const OurHeroes = () => {
   return (
     <section className={`${styles.ourHeroes} ${styles.container}`}>
       <h1 className={styles.descHeader}>Наши герои</h1>
       <nav className={styles.navigate}>
-        <ul className={styles.navigate__ul}>
-          <li>
-            <a className={styles.navigate__link} href="#">
-              Популярное
+        {categories.map((element) => {
+          const { nameCategories, idCategories } = element;
+          return (
+            <a key={idCategories} className={styles.navigate__link} href="#">
+              {nameCategories}
             </a>
-          </li>
-          <li>
-            <a className={styles.navigate__link} href="#">
-              Подросткам
-            </a>
-          </li>
-          <li>
-            <a className={styles.navigate__link} href="#">
-              Мульт-герои
-            </a>
-          </li>
-          <li>
-            <a className={styles.navigate__link} href="#">
-              Герои игр
-            </a>
-          </li>
-          <li>
-            <a className={styles.navigate__link} href="#">
-              Супергерои
-            </a>
-          </li>
-          <li>
-            <a className={styles.navigate__link} href="#">
-              Универсальное
-            </a>
-          </li>
-          <li>
-            <a className={styles.navigate__link} href="#">
-              Принцессы
-            </a>
-          </li>
-          <li>
-            <a className={styles.navigate__link} href="#">
-              Куклы
-            </a>
-          </li>
-        </ul>
+          );
+        })}
       </nav>
+
       <div className={styles.herosWrapper}>
         {heros.map((element, index) => {
-          const { background, imgCharacter, characterName, universe } = element;
+          const { imgCharacter, characterName, descrShow } = element;
           return (
             <div key={index} className={styles.hero}>
-              <div
-                style={{ backgroundColor: `${background}` }}
-                className={styles.hero__base}
-              >
-                <img
-                  className={styles.hero__base__img}
-                  src={`${BASE_IMG_URL}${imgCharacter}`}
-                  alt="hero costume"
-                />
-              </div>
+              <img
+                className={styles.hero__img}
+                src={require(`../../../assets/img/heroCard/${imgCharacter}.png`)}
+                alt="hero costume"
+              />
+
               <div className={styles.hero__descWrap}>
                 <span className={styles.hero__name}>{characterName}</span>
-                <span className={styles.hero__universe}>{universe}</span>
+                <span className={styles.hero__descrShow}>{descrShow}</span>
               </div>
             </div>
           );

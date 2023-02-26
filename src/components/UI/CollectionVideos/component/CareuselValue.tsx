@@ -1,14 +1,19 @@
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
 import styles from './CareuselValue.module.scss';
 
 type Props = {
-  text: string;
+  nameVideo: string;
 };
 
-const CareuselValue = ({ text }: Props) => {
+const CareuselValue = ({ nameVideo }: Props) => {
   return (
-    <div className={styles.wrapperVideo}>
-      <div className={styles.video}>{text}</div>
-    </div>
+    <video className={styles.videoShorts} muted loop>
+      <source
+        src={require(`../../../../assets/videos/shorts/${nameVideo}.mp4`)}
+        type="video/mp4"
+      />
+    </video>
   );
 };
 

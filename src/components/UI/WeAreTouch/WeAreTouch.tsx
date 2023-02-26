@@ -1,9 +1,9 @@
 import { SyntheticEvent, useState } from 'react';
 
-import { ReactComponent as TelegramIcon } from '../../../assets/icon/color/te.svg';
-import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/color/wa.svg';
-import { ReactComponent as VkontacteIcon } from '../../../assets/icon/color/vk.svg';
-import { ReactComponent as InstagramIcon } from '../../../assets/icon/color/inst.svg';
+import { ReactComponent as TelegramIcon } from '../../../assets/icon/messengers/color/te.svg';
+import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/messengers/color/wa.svg';
+import { ReactComponent as VkontacteIcon } from '../../../assets/icon/messengers/color/vk.svg';
+import { ReactComponent as InstagramIcon } from '../../../assets/icon/messengers/color/inst.svg';
 import Button from '../Button';
 import styles from './WeAreTouch.module.scss';
 

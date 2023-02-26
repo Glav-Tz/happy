@@ -8,13 +8,14 @@
 
 .title {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 40px;
+  line-height: 48px;
 
   color: #000000;
 }
 
 .desc {
-  margin: 10px 0 0 0;
+  margin: 20px 0 0 0;
 
   max-width: 775px;
 
@@ -22,13 +23,9 @@
 
   font-weight: 400;
   font-size: 18px;
+  line-height: 28px;
 
   color: #000000;
-}
-
-.coordinates {
-  margin: 180px 0 0px 800px;
-  z-index: 20;
 }
 
 .map {
@@ -53,4 +50,9 @@
     z-index: 10;
     pointer-events: none;
   }
+}
+
+.coordinates {
+  margin: 200px 0 0 0;
+  z-index: 20;
 }

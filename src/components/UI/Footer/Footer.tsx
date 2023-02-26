@@ -10,8 +10,7 @@ const Footer = () => {
   return (
     <footer className={`${styles.footer} ${styles.container}`}>
       <div className={styles.copyright}>
-        ИП Сидоренко ИНН ОГРН <br />
-        “Индустрия Праздника” 2023 (С) Все права защищены.
+        “Индустрия праздника” 2023 (С) Все права защищены.
       </div>
       <a className={styles.privacyPolicy} href="#">
         Политика конфиденциальности

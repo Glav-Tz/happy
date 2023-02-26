@@ -1,24 +1,5 @@
-.wrapperVideo {
-  width: 475px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.video {
-  height: 790px;
-  width: 440px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  font-weight: 700;
-  font-size: 48px;
-
+.videoShorts {
+  max-height: 380px;
   border-radius: 20px;
-
-  background-color: #ffffff;
+  border: 1px solid #ffffff;
 }

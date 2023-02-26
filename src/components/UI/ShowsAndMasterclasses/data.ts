@@ -1,30 +1,28 @@
-const BASE_IMG_URL_SHOW = '';
-
 const examplesWorksData = [
   {
-    imgWorks: '',
+    imgWorks: 'silverShow',
+    titleWorks: 'Серебряное Шоу',
+  },
+  {
+    imgWorks: 'soapBubbleShow',
     titleWorks: 'Шоу мыльных пузырей',
   },
   {
-    imgWorks: '',
-    titleWorks: 'Шоу мыльных пузырей',
-  },
-  {
-    imgWorks: '',
+    imgWorks: 'paintingT-shirts',
     titleWorks: 'Роспись футболок',
   },
   {
-    imgWorks: '',
+    imgWorks: 'silverShow',
+    titleWorks: 'Серебряное Шоу',
+  },
+  {
+    imgWorks: 'soapBubbleShow',
     titleWorks: 'Шоу мыльных пузырей',
   },
   {
-    imgWorks: '',
-    titleWorks: 'Шоу мыльных пузырей',
-  },
-  {
-    imgWorks: '',
+    imgWorks: 'paintingT-shirts',
     titleWorks: 'Роспись футболок',
   },
 ];
 
-export { examplesWorksData, BASE_IMG_URL_SHOW };
+export default examplesWorksData;

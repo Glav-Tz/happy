@@ -1,8 +1,9 @@
+/* eslint-disable global-require */
 import { SyntheticEvent, useState } from 'react';
 import styles from './Consultation.module.scss';
 
-import { ReactComponent as TelegramIcon } from '../../../assets/icon/color/te.svg';
-import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/color/wa.svg';
+import { ReactComponent as TelegramIcon } from '../../../assets/icon/messengers/color/te.svg';
+import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/messengers/color/wa.svg';
 import Button from '../Button';
 
 const handleSubmit = (event: SyntheticEvent) => {
@@ -15,15 +16,18 @@ const Consultation = () => {
 
   return (
     <section className={styles.consultation}>
-      <div className={styles.foto}>
-        <img className={styles.foto__consultant} src="" alt="foto consultant" />
-      </div>
+      <img
+        className={styles.foto}
+        src={require('../../../assets/img/photosEmployees/consultationFoto.png')}
+        alt="foto consultant"
+      />
 
       <div className={styles.description}>
         <h1 className={styles.annotationHeader}>Нужна консультация?</h1>
         <div className={styles.annotation}>
-          Позвоните нам по номеру +7 988 149-94-90, напишите в удобный Вам
-          мессенджер или оставьте свой номер, чтобы мы сами Вам перезвонили ;)
+          Позвоните нам по номеру <strong>+7 988 149-94-90</strong>, напишите в
+          удобный Вам мессенджер или оставьте свой номер, чтобы мы сами Вам
+          перезвонили ;)
         </div>
         <div className={styles.feedback}>
           <form className={styles.phoneWrapper} onSubmit={handleSubmit}>

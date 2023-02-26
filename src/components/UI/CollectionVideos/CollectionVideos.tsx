@@ -12,7 +12,8 @@ import styles from './CollectionVideos.module.scss';
 const responsive = {
   0: { items: 1 },
   568: { items: 2 },
-  1024: { items: 4 },
+  1024: { items: 3 },
+  1920: { items: 4 },
 };
 
 const CollectionVideos = () => {
@@ -23,8 +24,8 @@ const CollectionVideos = () => {
 
   useEffect(() => {
     const result = dataOfCarusel.map((item, index) => {
-      const { text } = item;
-      return <CareuselValue key={index} text={text} />;
+      const { nameVideo } = item;
+      return <CareuselValue key={index} nameVideo={nameVideo} />;
     });
     setArrElementsOfSlider([...result]);
   }, []);
