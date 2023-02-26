@@ -1,3 +1,5 @@
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
 import styles from './Partners.module.scss';
 import partnersValue from './data';
 
@@ -7,14 +9,21 @@ const Partners = () => {
       <h2 className={styles.title}>Наши друзья и партнеры</h2>
       <div className={styles.affiliatePrograms}>
         {partnersValue.map((element, index) => {
-          const { bgColor } = element;
+          const { bgMonochrome, bgColor } = element;
           return (
-            <div
-              key={index}
-              style={{ backgroundColor: `${bgColor}` }}
-              className={styles.logo}
-            >
-              LOGO
+            <div className={styles.imgWrapper}>
+              <img
+                key={index}
+                className={styles.logo}
+                src={require(`../../../assets/img/ourPartners/monochrome/${bgMonochrome}.png`)}
+                alt="partners"
+              />
+              <img
+                key={index}
+                className={styles.logo}
+                src={require(`../../../assets/img/ourPartners/color/${bgColor}.png`)}
+                alt="partners"
+              />
             </div>
           );
         })}

@@ -1,18 +1,15 @@
 const partnersValue = [
   {
-    bgColor: '#FCA91F',
+    bgMonochrome: 'limpopo',
+    bgColor: 'limpopo_color',
   },
   {
-    bgColor: '#F06199',
+    bgMonochrome: 'multiland',
+    bgColor: 'multiland_color',
   },
   {
-    bgColor: '#F06199',
-  },
-  {
-    bgColor: '#F06199',
-  },
-  {
-    bgColor: '#F8EA17',
+    bgMonochrome: 'youth',
+    bgColor: 'youth_color',
   },
 ];
 
