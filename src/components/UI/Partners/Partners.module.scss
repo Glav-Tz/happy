@@ -23,6 +23,10 @@
   gap: 40px;
 }
 
+.imgWrapper {
+  position: relative;
+}
+
 .logo {
   width: 220px;
   height: 120px;
@@ -32,18 +36,34 @@
   align-items: center;
 }
 
-.logo:nth-of-type(2) {
-  display: none;
+.logo_mono {
+  position: absolute;
 }
 
-.imgWrapper:hover img:nth-of-type(1) {
-  display: none;
+.logo_color {
+  opacity: 0;
 }
 
-.imgWrapper:hover img:nth-of-type(2) {
-  display: flex;
+.imgWrapper:hover .logo_mono {
+  opacity: 0;
+
+  animation-name: changingColor;
+  animation-duration: 1s;
+}
+
+.imgWrapper:hover .logo_color {
+  opacity: 1;
 }
 
 .imgWrapper:hover {
   cursor: pointer;
+}
+
+@keyframes changingColor {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
