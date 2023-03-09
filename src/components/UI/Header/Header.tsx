@@ -10,7 +10,7 @@ const Header = () => {
     <div className={`${styles.wrapperSticky} ${styles.container}`}>
       <header className={`${styles.header} ${styles.container}`}>
         <div className={styles.socialNetwork}>
-          <WhatsAppIcon />
+          <WhatsAppIcon className={styles.WhatsAppIcon} />
           <a className={styles.socialIcon} href="#">
             Написать WhatsApp
           </a>
