@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/happy/static/css/main.77ed4d9d.css",
-    "main.js": "/happy/static/js/main.f6492607.js",
+    "main.css": "/happy/static/css/main.0d228e90.css",
+    "main.js": "/happy/static/js/main.cdce503e.js",
     "static/media/video_4.mp4": "/happy/static/media/video_4.546dc236a9bc25d077ab.mp4",
     "static/media/video_5.mp4": "/happy/static/media/video_5.e7f5082c6006b182a50a.mp4",
     "static/media/video_1.mp4": "/happy/static/media/video_1.488e6992fdef1ba260db.mp4",
@@ -22,21 +22,21 @@
     "static/media/limpopo_color.png": "/happy/static/media/limpopo_color.8e45ac5a41c2630078b1.png",
     "static/media/multiland.png": "/happy/static/media/multiland.308677046b81757d578a.png",
     "static/media/limpopo.png": "/happy/static/media/limpopo.7064219f6e732cc742c6.png",
-    "static/media/inst.svg": "/happy/static/media/inst.78ddd44cff3556c47d3194d694e2ffb9.svg",
-    "static/media/wa.svg": "/happy/static/media/wa.7cd5d57d803f0543cfb040021f8fe4a6.svg",
-    "static/media/vk.svg": "/happy/static/media/vk.036859e4591c620a10cd36bb30c57a84.svg",
-    "static/media/tele.svg": "/happy/static/media/tele.f372d4fc7296038c180ec2993fad8130.svg",
-    "static/media/te.svg": "/happy/static/media/te.ae8acaf212d2e43a7e8a2f15b6f6c25c.svg",
+    "static/media/inst.svg": "/happy/static/media/inst.6e848562a7ab223c1005c17d7066cba4.svg",
+    "static/media/wa.svg": "/happy/static/media/wa.2adee21db1e4918f0c43a1adf19b112c.svg",
+    "static/media/vk.svg": "/happy/static/media/vk.45ec8fccfc926633b21faaf5f79b6bab.svg",
+    "static/media/tele.svg": "/happy/static/media/tele.39becdf19fb876e76fb3308638310985.svg",
+    "static/media/te.svg": "/happy/static/media/te.c49be097dc33baf5436e59e3340120a9.svg",
     "static/media/left_arrow.svg": "/happy/static/media/left_arrow.bb1e4cc1b78cbb2d6c5c2c613c2f5780.svg",
     "static/media/right_arrow.svg": "/happy/static/media/right_arrow.df21c31d0baf18a82a07c6ad35c455e0.svg",
     "static/media/phone.svg": "/happy/static/media/phone.390848675aa9c1263d7c6ad32ba7bd2e.svg",
     "index.html": "/happy/index.html",
     "static/media/play.svg": "/happy/static/media/play.340280717916f769c35484466255d820.svg",
-    "main.77ed4d9d.css.map": "/happy/static/css/main.77ed4d9d.css.map",
-    "main.f6492607.js.map": "/happy/static/js/main.f6492607.js.map"
+    "main.0d228e90.css.map": "/happy/static/css/main.0d228e90.css.map",
+    "main.cdce503e.js.map": "/happy/static/js/main.cdce503e.js.map"
   },
   "entrypoints": [
-    "static/css/main.77ed4d9d.css",
-    "static/js/main.f6492607.js"
+    "static/css/main.0d228e90.css",
+    "static/js/main.cdce503e.js"
   ]
 }
