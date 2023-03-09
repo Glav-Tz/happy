@@ -1,0 +1,49 @@
+.videoWrapper {
+  position: relative;
+
+  max-height: 615px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50px;
+
+  overflow: hidden;
+}
+
+.backgroundShow {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background: #FFFFFF;
+  opacity: 0.6;
+  z-index: 2;
+}
+
+.backgroundHide {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 2;
+  cursor: pointer;
+}
+
+.dtnVideoHide {
+  display: none;
+}
+
+.dtnVideoShow {
+  display: flex;
+}
+
+
+
+.videoShorts {
+  width: 100%;
+  z-index: 1;
+}

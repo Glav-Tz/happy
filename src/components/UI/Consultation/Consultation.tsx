@@ -1,5 +1,10 @@
 /* eslint-disable global-require */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import { SyntheticEvent, useState } from 'react';
+
+import PhoneInput from 'react-phone-input-2';
+// import 'react-phone-input-2/lib/style.css';
+
 import styles from './Consultation.module.scss';
 
 import { ReactComponent as TelegramIcon } from '../../../assets/icon/messengers/color/te.svg';
@@ -32,14 +37,17 @@ const Consultation = () => {
         <div className={styles.feedback}>
           <form className={styles.phoneWrapper} onSubmit={handleSubmit}>
             <label htmlFor="phone">
-              <input
-                className={styles.phone}
-                type="tel"
-                id="phone"
+              <PhoneInput
+                countryCodeEditable={false}
+                specialLabel=""
+                placeholder="+7 (___) ___ - __ - __"
+                country="ru"
+                disableDropdown
                 value={phone}
-                onChange={(event) => setPhone(event.currentTarget.value)}
-                placeholder="+7(___)___-__-__"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}[0-9]{2}"
+                onChange={(value) => setPhone(value)}
+                containerClass={styles.phone}
+                inputClass={styles.phone_input}
+                dropdownStyle={{ display: 'none' }}
               />
             </label>
             <input
@@ -65,3 +73,13 @@ const Consultation = () => {
 };
 
 export default Consultation;
+
+// <input
+//     className={styles.phone}
+//     type="tel"
+//     id="phone"
+//     value={phone}
+//     onChange={(event) => setPhone(event.currentTarget.value)}
+//     placeholder="+7(___)___-__-__"
+//     pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}[0-9]{2}"
+// />

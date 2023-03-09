@@ -1,8 +1,7 @@
 @import '../../../styles/App.scss';
 
 .footer {
-  margin: 30px auto 0;
-  padding: 0 90px;
+  padding: 30px 90px 0 90px;
 
   display: flex;
   justify-content: space-between;
@@ -45,4 +44,33 @@
   width: 100%;
 
   cursor: pointer;
+}
+
+.vkIcon {
+  fill: #000000;
+
+  &:hover {
+    fill: #2474F0;
+  }
+}
+.instagramIcon {
+  fill: #000000;
+
+  &:hover {
+    fill: #E93F60;
+  }
+}
+.telegramIcon {
+  fill: #000000;
+
+  &:hover {
+    fill: #34AADF;
+  }
+}
+.whatsAppIcon {
+  fill: #000000;
+
+  &:hover {
+    fill: #00BE50;
+  }
 }

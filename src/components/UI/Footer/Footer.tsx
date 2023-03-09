@@ -17,16 +17,16 @@ const Footer = () => {
       </a>
       <div className={styles.socialNetwork}>
         <a className={styles.socialIcon} href="#">
-          <VkIcon />
+          <VkIcon className={styles.vkIcon} />
         </a>
         <a className={styles.socialIcon} href="#">
-          <InstagramIcon />
+          <InstagramIcon className={styles.instagramIcon} />
         </a>
         <a className={styles.socialIcon} href="#">
-          <TelegramIcon />
+          <TelegramIcon className={styles.telegramIcon} />
         </a>
         <a className={styles.socialIcon} href="#">
-          <WhatsAppIcon />
+          <WhatsAppIcon className={styles.whatsAppIcon} />
         </a>
       </div>
     </footer>

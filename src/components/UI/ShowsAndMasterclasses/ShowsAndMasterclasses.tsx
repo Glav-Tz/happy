@@ -7,7 +7,10 @@ import Button from '../Button';
 
 const ShowsAndMasterclasses = () => {
   return (
-    <section className={`${styles.sahowsAndMasterclasses} ${styles.container}`}>
+    <section
+      id="shows-and-masterclasses"
+      className={`${styles.showsAndMasterclasses} ${styles.container}`}
+    >
       <h1 className={styles.title}>Шоу и мастерклассы</h1>
       <div className={styles.examplesWorks}>
         {examplesWorksData.map((element, index) => {

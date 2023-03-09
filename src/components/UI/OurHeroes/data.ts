@@ -1,71 +1,77 @@
 const categories = [
   {
     nameCategories: 'Популярное',
-    idCategories: '1',
+    idCategories: 0,
   },
   {
     nameCategories: 'Подросткам',
-    idCategories: '2',
+    idCategories: 1,
   },
   {
     nameCategories: 'Мульт-герои',
-    idCategories: '3',
+    idCategories: 2,
   },
   {
     nameCategories: 'Герои игр',
-    idCategories: '4',
+    idCategories: 3,
   },
   {
     nameCategories: 'Супергерои',
-    idCategories: '5',
+    idCategories: 4,
   },
   {
     nameCategories: 'Универсальное',
-    idCategories: '6',
+    idCategories: 5,
   },
   {
     nameCategories: 'Принцессы',
-    idCategories: '7',
+    idCategories: 6,
   },
   {
     nameCategories: 'Куклы',
-    idCategories: '8',
+    idCategories: 7,
   },
 ];
 
-const heros = [
+const hero = [
   {
     imgCharacter: 'sweetTooth',
     characterName: 'Сладкая вечеринка',
-    descrShow: 'Все сладости в одной игровой программе',
+    descShow: 'Все сладости в одной игровой программе',
+    consistsOfGroups: [0, 1],
   },
   {
     imgCharacter: 'unicorn',
     characterName: 'Единорожка',
-    descrShow:
+    descShow:
       'Самая нежная и волшебная программа, в которой собрано все, что любят Единороги',
+    consistsOfGroups: [0, 2],
   },
   {
     imgCharacter: 'puppyPatrol',
     characterName: 'Щенячий Патруль',
-    descrShow:
+    descShow:
       'Супергеройская игровая программа по мотивам любимого мультфильма',
+    consistsOfGroups: [0, 2],
   },
   {
     imgCharacter: 'spiderMan',
     characterName: 'Человек шелкопряд',
-    descrShow: 'Есть у него веретено, всех врагов он победит легко.',
+    descShow: 'Есть у него веретено, всех врагов он победит легко.',
+    consistsOfGroups: [0, 4],
   },
   {
     imgCharacter: 'haggiWaggi',
     characterName: 'Хагги Вагги',
-    descrShow: 'Путешествие на фабрику игрушек Poppy Playtime',
+    descShow: 'Путешествие на фабрику игрушек Poppy Playtime',
+    consistsOfGroups: [0, 8],
   },
   {
     imgCharacter: 'tickTok',
-    characterName: 'ТикТок',
-    descrShow: 'Устройте своему ребенку ТикТок челлендж',
+    characterName: 'Тик Ток',
+    descShow: 'Устройте своему ребенку ТикТок челлендж',
+    consistsOfGroups: [0, 8],
   },
 ];
 
-export { heros, categories };
+export { hero, categories };

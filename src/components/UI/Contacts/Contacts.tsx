@@ -4,7 +4,7 @@ import styles from './Contacts.module.scss';
 
 const Contacts = () => {
   return (
-    <section className={`${styles.reviews} ${styles.container}`}>
+    <section id="contacts" className={`${styles.reviews} ${styles.container}`}>
       <div className={styles.title}>Наши контакты</div>
       <div className={styles.desc}>
         Можете связаться с нами по номеру <strong>+7 988 149-94-90</strong>,

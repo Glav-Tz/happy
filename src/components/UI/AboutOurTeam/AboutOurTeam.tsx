@@ -35,7 +35,10 @@ const AboutOurTeam = () => {
   }, []);
 
   return (
-    <section className={`${styles.aboutOurTeam} ${styles.container}`}>
+    <section
+      id="about-our-team"
+      className={`${styles.aboutOurTeam} ${styles.container}`}
+    >
       <h1 className={styles.title}>О нас</h1>
       <div className={styles.wrapperBlok}>
         <div className={styles.employee}>

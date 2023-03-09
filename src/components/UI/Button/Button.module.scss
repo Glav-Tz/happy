@@ -22,4 +22,8 @@
   color: #ffffff;
 
   cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(180deg, #FF9CC2 0%, #E83752 100%);
+  }
 }

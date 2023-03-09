@@ -18,13 +18,16 @@ const Header = () => {
 
         <nav className={styles.navigate}>
           <div className={styles.navigateBlock_one}>
-            <a className={styles.navigate__link} href="#">
+            <a className={styles.navigate__link} href="#main-screen">
               Наши герои
             </a>
-            <a className={styles.navigate__link} href="#">
+            <a
+              className={styles.navigate__link}
+              href="#shows-and-masterclasses"
+            >
               Шоу и мастерклассы
             </a>
-            <a className={styles.navigate__link} href="#">
+            <a className={styles.navigate__link} href="#about-our-team">
               О нас
             </a>
           </div>
@@ -36,13 +39,13 @@ const Header = () => {
           />
 
           <div className={styles.navigateBlock_two}>
-            <a className={styles.navigate__link} href="#">
+            <a className={styles.navigate__link} href="#collection-videos">
               Видео с праздников
             </a>
-            <a className={styles.navigate__link} href="#">
+            <a className={styles.navigate__link} href="#reviews">
               Отзывы
             </a>
-            <a className={styles.navigate__link} href="#">
+            <a className={styles.navigate__link} href="#contacts">
               Контакты
             </a>
           </div>
@@ -53,7 +56,7 @@ const Header = () => {
             <PhoneIcon />
           </div>
           <a className={styles.phoneText} href="tel: +79881499490">
-            +7 (988) 149-94-90
+            +7 988 149-94-90
           </a>
         </div>
       </header>

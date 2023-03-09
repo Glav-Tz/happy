@@ -10,12 +10,12 @@
   align-items: center;
 
   transform: translateY(150px);
-  z-index: 1;
+  z-index: 4;
 }
 
 .header {
   width: 100%;
-  padding: 0px 30px;
+  padding: 0 30px;
 
   display: grid;
   grid-template-columns: 230px 1fr 230px;
@@ -63,7 +63,7 @@
   display: flex;
   align-items: center;
 
-  border-radius: 20px;
+  border-radius: 30px;
   background-color: #ffffff;
 }
 
@@ -78,6 +78,8 @@
 .phoneText {
   color: #000000;
   font-weight: bold;
+
+  text-decoration: none;
 }
 
 .navigate {
@@ -107,6 +109,10 @@
     color: #ffffff;
 
     text-transform: uppercase;
+
+    &:hover {
+      color: #00BE50;
+    }
   }
 
   .navigateBlock_one {

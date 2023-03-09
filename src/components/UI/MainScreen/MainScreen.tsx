@@ -4,20 +4,16 @@ import styles from './MainScreen.module.scss';
 
 const MainScreen = () => {
   return (
-    <section className={`${styles.mainScreen} ${styles.container}`}>
+    <section
+      id="main-screen"
+      className={`${styles.mainScreen} ${styles.container}`}
+    >
       <h1 className={styles.title}>
-        Детские праздники в Туапсе с лучшими аниматорами города
+        Детские праздники в Туапсе и районе с лучшими аниматорами города
       </h1>
-      <Button className={styles.btnMainScreen}>Устроить детям праздник</Button>
+      <Button className={styles.btnMainScreen}>Рассчитать стоимость</Button>
     </section>
   );
 };
 
 export default MainScreen;
-
-// /* <video className={styles.videoPresentation} muted loop>
-//       <source
-//         src={require('../../../assets/videos/videoPresentation.mp4')}
-//         type="video/mp4"
-//       />
-//     </video> */

@@ -11,15 +11,13 @@ const Partners = () => {
         {partnersValue.map((element, index) => {
           const { bgMonochrome, bgColor } = element;
           return (
-            <div className={styles.imgWrapper}>
+            <div key={index} className={styles.imgWrapper}>
               <img
-                key={index}
                 className={`${styles.logo_mono} ${styles.logo}`}
                 src={require(`../../../assets/img/ourPartners/monochrome/${bgMonochrome}.png`)}
                 alt="partners"
               />
               <img
-                key={index}
                 className={`${styles.logo_color} ${styles.logo}`}
                 src={require(`../../../assets/img/ourPartners/color/${bgColor}.png`)}
                 alt="partners"
