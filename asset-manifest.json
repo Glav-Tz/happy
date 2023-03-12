@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/happy/static/css/main.69690aa1.css",
-    "main.js": "/happy/static/js/main.2f4d75b6.js",
+    "main.css": "/happy/static/css/main.808928d0.css",
+    "main.js": "/happy/static/js/main.3dcee615.js",
     "static/media/video_4.mp4": "/happy/static/media/video_4.546dc236a9bc25d077ab.mp4",
     "static/media/video_5.mp4": "/happy/static/media/video_5.e7f5082c6006b182a50a.mp4",
     "static/media/video_1.mp4": "/happy/static/media/video_1.488e6992fdef1ba260db.mp4",
@@ -19,12 +19,14 @@
     "static/media/tickTok.png": "/happy/static/media/tickTok.592b8ed2d965c45813ff.png",
     "static/media/consultationFoto.png": "/happy/static/media/consultationFoto.b283d0d38f44644f1f59.png",
     "static/media/multiland_color.png": "/happy/static/media/multiland_color.884548b3e9be5b10bc26.png",
+    "static/media/logo.svg": "/happy/static/media/logo.9cffcad1f6d91b3a96e9ca4af40be868.svg",
     "static/media/limpopo_color.png": "/happy/static/media/limpopo_color.8e45ac5a41c2630078b1.png",
     "static/media/multiland.png": "/happy/static/media/multiland.308677046b81757d578a.png",
     "static/media/limpopo.png": "/happy/static/media/limpopo.7064219f6e732cc742c6.png",
     "static/media/inst.svg": "/happy/static/media/inst.6e848562a7ab223c1005c17d7066cba4.svg",
     "static/media/wa.svg": "/happy/static/media/wa.2adee21db1e4918f0c43a1adf19b112c.svg",
     "static/media/vk.svg": "/happy/static/media/vk.45ec8fccfc926633b21faaf5f79b6bab.svg",
+    "static/media/cross.svg": "/happy/static/media/cross.da9c1a8120fddf6a4a6d9e2bdd97f7eb.svg",
     "static/media/tele.svg": "/happy/static/media/tele.39becdf19fb876e76fb3308638310985.svg",
     "static/media/te.svg": "/happy/static/media/te.c49be097dc33baf5436e59e3340120a9.svg",
     "static/media/left_arrow.svg": "/happy/static/media/left_arrow.bb1e4cc1b78cbb2d6c5c2c613c2f5780.svg",
@@ -32,11 +34,11 @@
     "static/media/phone.svg": "/happy/static/media/phone.390848675aa9c1263d7c6ad32ba7bd2e.svg",
     "index.html": "/happy/index.html",
     "static/media/play.svg": "/happy/static/media/play.340280717916f769c35484466255d820.svg",
-    "main.69690aa1.css.map": "/happy/static/css/main.69690aa1.css.map",
-    "main.2f4d75b6.js.map": "/happy/static/js/main.2f4d75b6.js.map"
+    "main.808928d0.css.map": "/happy/static/css/main.808928d0.css.map",
+    "main.3dcee615.js.map": "/happy/static/js/main.3dcee615.js.map"
   },
   "entrypoints": [
-    "static/css/main.69690aa1.css",
-    "static/js/main.2f4d75b6.js"
+    "static/css/main.808928d0.css",
+    "static/js/main.3dcee615.js"
   ]
 }
