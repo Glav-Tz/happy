@@ -12,6 +12,13 @@
   overflow: hidden;
 }
 
+@media (max-width: 1500px) {
+  .videoWrapper {
+    min-height: 480px;
+    min-width: 270px;
+  }
+}
+
 .backgroundShow {
   position: absolute;
 

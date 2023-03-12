@@ -1,16 +1,14 @@
 .ButtonHero {
   min-height: 40px;
-  min-width: 150px;
-  padding: 10px 15px;
+  width: 150px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 17px;
-  text-align: center;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
 
   border-radius: 20px;
   color: #000000;
@@ -29,3 +27,9 @@
     border: 1px solid #000000;
   }
 }
+
+//@media (max-width: 1300px) {
+//  .ButtonHero {
+//    width: 130px;
+//  }
+//}

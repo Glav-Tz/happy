@@ -22,11 +22,28 @@
   grid-template-rows: auto;
   gap: 20px;
 
+  grid-template-areas:
+      'A B C';
+
   color: #ffffff;
 }
 
+@media (max-width: 1500px) {
+  .header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+      'A C'
+      'B B';
+  }
+}
+
 .socialNetwork {
-  min-width: 230px;
+  grid-area: A;
+  justify-self: start;
+
+  width: 230px;
   min-height: 50px;
   padding: 3px 20px;
 
@@ -42,7 +59,7 @@
 }
 
 .WhatsAppIcon {
-  fill: #00BE50;
+  fill: #00be50;
 }
 
 .socialIcon {
@@ -60,8 +77,11 @@
 }
 
 .contactPhone {
+  grid-area: C;
+  justify-self: end;
+
   min-height: 50px;
-  min-width: 230px;
+  width: 230px;
   padding: 3px 10px;
 
   display: flex;
@@ -87,6 +107,8 @@
 }
 
 .navigate {
+  grid-area: B;
+
   padding: 0 40px;
 
   display: grid;
@@ -115,18 +137,11 @@
     text-transform: uppercase;
 
     &:hover {
-      color: #00BE50;
+      color: #00be50;
     }
   }
 
-  .navigateBlock_one {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .navigateBlock_two {
+  .navigateBlocks {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,5 +150,25 @@
 
   .logo {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 1600px) {
+  .logo {
+    height: 105px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .logo {
+    height: 80px;
+  }
+
+  .navigateBlocks {
+    gap: 20px;
+  }
+
+  .navigate__link {
+    font-size: 12px;
   }
 }

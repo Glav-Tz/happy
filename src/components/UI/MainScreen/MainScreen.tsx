@@ -1,8 +1,12 @@
 /* eslint-disable global-require */
+import { Dispatch, SetStateAction } from 'react';
 import Button from '../Button';
 import styles from './MainScreen.module.scss';
 
-const MainScreen = () => {
+type Props = {
+  setIsActive: Dispatch<SetStateAction<boolean>>;
+};
+const MainScreen = ({ setIsActive }: Props) => {
   return (
     <section
       id="main-screen"
@@ -11,7 +15,12 @@ const MainScreen = () => {
       <h1 className={styles.title}>
         Детские праздники в Туапсе и районе с лучшими аниматорами города
       </h1>
-      <Button className={styles.btnMainScreen}>Рассчитать стоимость</Button>
+      <Button
+        onClick={() => setIsActive(true)}
+        className={styles.btnMainScreen}
+      >
+        Рассчитать стоимость
+      </Button>
     </section>
   );
 };

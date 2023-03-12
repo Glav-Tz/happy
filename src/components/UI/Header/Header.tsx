@@ -4,6 +4,7 @@ import styles from './Header.module.scss';
 
 import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/messengers/color/wa.svg';
 import { ReactComponent as PhoneIcon } from '../../../assets/icon/phone.svg';
+import { ReactComponent as LogoIcon } from '../../../assets/icon/logo.svg';
 
 const Header = () => {
   return (
@@ -17,7 +18,7 @@ const Header = () => {
         </div>
 
         <nav className={styles.navigate}>
-          <div className={styles.navigateBlock_one}>
+          <div className={styles.navigateBlocks}>
             <a className={styles.navigate__link} href="#main-screen">
               Наши герои
             </a>
@@ -32,13 +33,9 @@ const Header = () => {
             </a>
           </div>
 
-          <img
-            className={styles.logo}
-            src={require('../../../assets/img/logo.png')}
-            alt="logo"
-          />
+          <LogoIcon className={styles.logo} />
 
-          <div className={styles.navigateBlock_two}>
+          <div className={styles.navigateBlocks}>
             <a className={styles.navigate__link} href="#collection-videos">
               Видео с праздников
             </a>

@@ -17,14 +17,53 @@
   color: #000000;
 }
 
-.reviewsVK {
+.wrapperReviews {
+  max-width: 1360px;
   margin: 50px 0 0 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 380px;
+  gap: 30px;
+
+  grid-template-areas:
+    'A B'
+    'A C'
+}
+
+@media (max-width: 1500px) {
+  .wrapperReviews {
+    grid-template-areas:
+    'A A'
+    'B C'
+  }
+}
+
+
+.reviewsVK {
+  grid-area: A;
 
   width: 900px;
   height: 790px;
 
-  border-radius: 20px;
-
   background: #ffffff;
-  box-shadow: 0px 4px 30px rgba(211, 46, 135, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(211, 46, 135, 0.2);
 }
+
+.reviewsOne {
+  grid-area: B;
+  max-width: 430px;
+
+  background: #2474f0;
+  border-radius: 50px;
+}
+
+.reviewsTwo {
+  grid-area: C;
+  max-width: 430px;
+
+  background: linear-gradient(142.05deg, #a976ea 3.08%, #ff48cc 78.09%);
+  border-radius: 50px;
+}
+

@@ -14,13 +14,35 @@
   color: #000000;
 }
 
+@media (max-width: 1600px) {
+  .footer {
+    padding: 30px 50px 0 50px;
+  }
+}
+
 .copyright {
   text-align: center;
 }
 
 .privacyPolicy {
   text-decoration: none;
+  text-align: center;
+
   color: #000000;
+}
+
+@media (max-width: 1080px) {
+  .footer {
+    padding: 30px 40px 0 40px;
+  }
+
+  .privacyPolicy {
+    display: none;
+  }
+
+  .copyright {
+    max-width: 270px;
+  }
 }
 
 .socialNetwork {
@@ -50,27 +72,27 @@
   fill: #000000;
 
   &:hover {
-    fill: #2474F0;
+    fill: #2474f0;
   }
 }
 .instagramIcon {
   fill: #000000;
 
   &:hover {
-    fill: #E93F60;
+    fill: #e93f60;
   }
 }
 .telegramIcon {
   fill: #000000;
 
   &:hover {
-    fill: #34AADF;
+    fill: #34aadf;
   }
 }
 .whatsAppIcon {
   fill: #000000;
 
   &:hover {
-    fill: #00BE50;
+    fill: #00be50;
   }
 }

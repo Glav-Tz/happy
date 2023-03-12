@@ -27,6 +27,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+
+}
+
+@media (max-width: 1300px) {
+  .navigate {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .heroesWrapper {
@@ -37,6 +49,13 @@
   grid-template-rows: repeat(2, 1fr);
 
   gap: 30px 110px;
+}
+
+@media (max-width: 1080px) {
+  .heroesWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 
 .hero {
