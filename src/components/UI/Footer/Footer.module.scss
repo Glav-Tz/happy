@@ -31,20 +31,6 @@
   color: #000000;
 }
 
-@media (max-width: 1080px) {
-  .footer {
-    padding: 30px 40px 0 40px;
-  }
-
-  .privacyPolicy {
-    display: none;
-  }
-
-  .copyright {
-    max-width: 270px;
-  }
-}
-
 .socialNetwork {
   display: flex;
 
@@ -95,4 +81,33 @@
   &:hover {
     fill: #00be50;
   }
+}
+
+@media (max-width: 1080px) {
+  .footer {
+    padding: 30px 40px 0 40px;
+  }
+  .copyright {
+    max-width: 270px;
+  }
+
+  .privacyPolicy {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .privacyPolicy {
+    display: flex;
+    margin: 40px 0 0 0;
+  }
+
+  .socialNetwork {
+    margin: 30px 0 0 0;
+  }
+
 }

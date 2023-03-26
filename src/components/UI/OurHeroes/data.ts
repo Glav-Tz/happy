@@ -28,7 +28,7 @@ const categories = [
     idCategories: 6,
   },
   {
-    nameCategories: 'Куклы',
+    nameCategories: 'Куколки',
     idCategories: 7,
   },
 ];

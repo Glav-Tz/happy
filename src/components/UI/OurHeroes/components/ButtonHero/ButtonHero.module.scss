@@ -1,6 +1,5 @@
 .ButtonHero {
-  min-height: 40px;
-  width: 150px;
+  padding: 10px 20px;
 
   display: flex;
   align-items: center;
@@ -18,18 +17,12 @@
 
   outline: none;
   text-decoration: none;
-  border: none;
   background: none;
 
   cursor: pointer;
+  border: 1px solid #ffffff;
 
   &:hover {
     border: 1px solid #000000;
   }
 }
-
-//@media (max-width: 1300px) {
-//  .ButtonHero {
-//    width: 130px;
-//  }
-//}

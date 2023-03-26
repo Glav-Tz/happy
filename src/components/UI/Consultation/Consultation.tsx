@@ -59,11 +59,11 @@ const Consultation = () => {
           <div className={styles.dtnWrapper}>
             <Button className={styles.messengersWatsApp}>
               <WhatsAppIcon className={styles.svgWatsApp} />
-              WhatsApp
+              <span className={styles.svgWatsAppText}> WhatsApp</span>
             </Button>
             <Button className={styles.messengersTelegram}>
               <TelegramIcon className={styles.svgTelegram} />
-              Telegram
+              <span className={styles.svgTelegramText}>Telegram</span>
             </Button>
           </div>
         </div>
@@ -73,13 +73,3 @@ const Consultation = () => {
 };
 
 export default Consultation;
-
-// <input
-//     className={styles.phone}
-//     type="tel"
-//     id="phone"
-//     value={phone}
-//     onChange={(event) => setPhone(event.currentTarget.value)}
-//     placeholder="+7(___)___-__-__"
-//     pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}[0-9]{2}"
-// />

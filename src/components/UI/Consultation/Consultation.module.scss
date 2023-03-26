@@ -28,13 +28,12 @@
 .feedback {
   margin: 40px 0 0 0;
   display: flex;
-
 }
 
 @media (max-width: 1300px) {
   .feedback {
     flex-wrap: wrap;
-    row-gap: 40px
+    row-gap: 40px;
   }
 }
 
@@ -61,7 +60,6 @@
 }
 
 .phone_input {
-
   padding-left: 20px;
 
   font-weight: 700;
@@ -71,7 +69,7 @@
   color: #b4b4b4;
 
   border: none;
-  outline:none;
+  outline: none;
 }
 
 .dtnPhone {
@@ -104,7 +102,7 @@
   transform: translateX(-30px);
 
   &:hover {
-    background: linear-gradient(180deg, #FF9CC2 0%, #E83752 100%);
+    background: linear-gradient(180deg, #ff9cc2 0%, #e83752 100%);
   }
 }
 
@@ -134,17 +132,17 @@
   color: #00be50;
 
   &:hover {
-    background: #00BE50;
-    color: #FFFFFF;
+    background: #00be50;
+    color: #ffffff;
 
     .svgWatsApp {
-      fill: #FFFFFF;
+      fill: #ffffff;
     }
   }
 }
 
 .svgWatsApp {
-  fill: #00BE50;
+  fill: #00be50;
 }
 
 .messengersTelegram {
@@ -168,15 +166,68 @@
   color: #34aadf;
 
   &:hover {
-    background: #34AADF;
-    color: #FFFFFF;
+    background: #34aadf;
+    color: #ffffff;
 
     .svgTelegram {
-      fill: #FFFFFF;
+      fill: #ffffff;
     }
   }
 }
 
 .svgTelegram {
-  fill: #34AADF;
+  fill: #34aadf;
+}
+
+@media (max-width: 400px) {
+  .consultation {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .annotationHeader {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .phoneWrapper {
+    min-width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .feedback {
+    justify-content: center;
+  }
+
+  .phone {
+    border-radius: 40px;
+  }
+
+  .dtnPhone {
+    height: 60px;
+    transform: translateX(0);
+  }
+
+  .dtnWrapper {
+    min-width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .messengersWatsApp {
+    display: flex;
+    justify-content: space-between;
+  }
+  .svgWatsApp {
+    margin-right: 100px;
+  }
+
+  .messengersTelegram {
+    display: flex;
+    justify-content: space-between;
+  }
+  .svgTelegram {
+    margin-right: 100px;
+  }
 }

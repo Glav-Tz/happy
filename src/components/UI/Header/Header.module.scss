@@ -22,21 +22,9 @@
   grid-template-rows: auto;
   gap: 20px;
 
-  grid-template-areas:
-      'A B C';
+  grid-template-areas: 'A B C';
 
   color: #ffffff;
-}
-
-@media (max-width: 1500px) {
-  .header {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    grid-template-areas:
-      'A C'
-      'B B';
-  }
 }
 
 .socialNetwork {
@@ -120,6 +108,13 @@
 
   border-radius: 30px;
   background-color: #000000;
+}
+
+.navigateBlocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 
   &__link {
     display: flex;
@@ -140,16 +135,25 @@
       color: #00be50;
     }
   }
+}
 
-  .navigateBlocks {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-  }
+.logo {
+  margin: 0 auto;
+}
 
-  .logo {
-    margin: 0 auto;
+.socialIconTextMin {
+  display: none;
+}
+
+@media (max-width: 1500px) {
+  .header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+      'A C'
+      'B B';
+    align-items: flex-start;
   }
 }
 
@@ -170,5 +174,138 @@
 
   .navigate__link {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 950px) {
+  .header {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    grid-template-areas: 'A B C';
+    padding: 0 10px;
+    gap: 0;
+  }
+
+  .socialNetwork {
+    max-height: 50px;
+  }
+
+  .contactPhone {
+    max-height: 50px;
+  }
+
+  .navigate {
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 30px;
+    background-color: transparent;
+  }
+
+  .navigateBlocks {
+    display: none;
+
+    &__link {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 785px) {
+  .header {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+
+    grid-template-areas:
+      'A C'
+      'B B';
+    gap: 10px;
+  }
+
+  .socialNetwork {
+    min-height: 0;
+    height: 40px;
+    width: 200px;
+
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+  }
+
+  .WhatsAppIcon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .socialIconText {
+    display: none;
+  }
+
+  .socialIconTextMin {
+    display: flex;
+    font-size: 14px;
+  }
+
+  .contactPhone {
+    min-height: 0;
+    max-width: 200px;
+    height: 40px;
+
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  .phoneIcon {
+    width: 15px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 450px) {
+  .wrapperSticky {
+    transform: translateY(170px);
+  }
+
+  .header {
+    padding: 0;
+    gap: 10px;
+  }
+
+  .socialNetwork {
+    height: 30px;
+    width: 140px;
+
+    gap: 5px;
+  }
+
+  .WhatsAppIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .contactPhone {
+    max-width: 150px;
+    height: 30px;
+
+    gap: 5px;
+  }
+
+  .phoneIcon {
+    width: 9px;
+    height: 15px;
   }
 }

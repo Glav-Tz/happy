@@ -13,22 +13,22 @@ const Header = () => {
         <div className={styles.socialNetwork}>
           <WhatsAppIcon className={styles.WhatsAppIcon} />
           <a className={styles.socialIcon} href="#">
-            Написать WhatsApp
+            <span className={styles.socialIconText}>Написать WhatsApp</span>
+            <span className={styles.socialIconTextMin}>WhatsApp</span>
           </a>
         </div>
-
         <nav className={styles.navigate}>
           <div className={styles.navigateBlocks}>
-            <a className={styles.navigate__link} href="#main-screen">
+            <a className={styles.navigateBlocks__link} href="#main-screen">
               Наши герои
             </a>
             <a
-              className={styles.navigate__link}
+              className={styles.navigateBlocks__link}
               href="#shows-and-masterclasses"
             >
               Шоу и мастерклассы
             </a>
-            <a className={styles.navigate__link} href="#about-our-team">
+            <a className={styles.navigateBlocks__link} href="#about-our-team">
               О нас
             </a>
           </div>
@@ -36,22 +36,23 @@ const Header = () => {
           <LogoIcon className={styles.logo} />
 
           <div className={styles.navigateBlocks}>
-            <a className={styles.navigate__link} href="#collection-videos">
+            <a
+              className={styles.navigateBlocks__link}
+              href="#collection-videos"
+            >
               Видео с праздников
             </a>
-            <a className={styles.navigate__link} href="#reviews">
+            <a className={styles.navigateBlocks__link} href="#reviews">
               Отзывы
             </a>
-            <a className={styles.navigate__link} href="#contacts">
+            <a className={styles.navigateBlocks__link} href="#contacts">
               Контакты
             </a>
           </div>
         </nav>
 
         <div className={styles.contactPhone}>
-          <div className={styles.phoneIcon}>
-            <PhoneIcon />
-          </div>
+          <PhoneIcon className={styles.phoneIcon} />
           <a className={styles.phoneText} href="tel: +79881499490">
             +7 988 149-94-90
           </a>
