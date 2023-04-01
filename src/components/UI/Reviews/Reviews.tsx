@@ -6,8 +6,6 @@ const Reviews = () => {
       <div className={styles.title}>Реальные отзывы</div>
       <div className={styles.wrapperReviews}>
         <div className={styles.reviewsVK} />
-        <div className={styles.reviewsOne} />
-        <div className={styles.reviewsTwo} />
       </div>
     </section>
   );

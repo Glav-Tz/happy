@@ -56,3 +56,30 @@
   margin: 200px 0 0 0;
   z-index: 20;
 }
+
+@media (max-width: 800px) {
+  .desc {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .desc {
+    text-align: justify;
+  }
+  .coordinates {
+    margin: 230px 0 0 0;
+    z-index: 20;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 35px;
+  }
+
+  .desc {
+    margin: 5px 0 0 0;
+  }
+}

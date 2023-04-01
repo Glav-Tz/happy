@@ -30,13 +30,6 @@
   display: flex;
 }
 
-@media (max-width: 1300px) {
-  .feedback {
-    flex-wrap: wrap;
-    row-gap: 40px;
-  }
-}
-
 .phoneWrapper {
   display: flex;
 }
@@ -179,15 +172,44 @@
   fill: #34aadf;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1300px) {
+  .feedback {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 860px) {
   .consultation {
+    max-width: 500px;
+    margin: 60px auto 0;
+
     flex-direction: column;
     justify-content: center;
+
+    gap: 5px;
   }
 
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedback {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
   .annotationHeader {
-    font-size: 28px;
+    font-size: 26px;
     line-height: 40px;
+  }
+
+  .annotation {
+    padding: 0 10px;
+    text-align: justify;
   }
 
   .phoneWrapper {
@@ -208,7 +230,9 @@
     height: 60px;
     transform: translateX(0);
   }
+}
 
+@media (max-width: 420px) {
   .dtnWrapper {
     min-width: 100%;
     flex-direction: column;
@@ -219,15 +243,27 @@
     display: flex;
     justify-content: space-between;
   }
+
   .svgWatsApp {
     margin-right: 100px;
+  }
+
+  .svgWatsAppText {
+    position: relative;
+    left: calc(-70px + (-110 + 70) * ((100vw - 320px) / (400 - 320)));
   }
 
   .messengersTelegram {
     display: flex;
     justify-content: space-between;
   }
+
   .svgTelegram {
     margin-right: 100px;
+  }
+
+  .svgTelegramText {
+    position: relative;
+    left: calc(-70px + (-110 + 70) * ((100vw - 320px) / (400 - 320)));
   }
 }

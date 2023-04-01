@@ -1,11 +1,17 @@
 /* eslint-disable import/no-dynamic-require */
 /* eslint-disable global-require */
+import { useState } from 'react';
+import { useIsMobile } from '../../../helpFunction/hooks';
 import styles from './ShowsAndMasterclasses.module.scss';
 
 import examplesWorksData from './data';
 import Button from '../Button';
 
 const ShowsAndMasterclasses = () => {
+  const isMobile = useIsMobile();
+
+  const [isHidden, setIsHidden] = useState(false);
+
   return (
     <section
       id="shows-and-masterclasses"
@@ -15,6 +21,21 @@ const ShowsAndMasterclasses = () => {
       <div className={styles.examplesWorks}>
         {examplesWorksData.map((element, index) => {
           const { imgWorks, titleWorks } = element;
+          if (isMobile && !isHidden) {
+            return (
+              index < 3 && (
+                <div key={index} className={styles.example}>
+                  <img
+                    className={styles.example__img}
+                    src={require(`../../../assets/img/ShowsAndMasterclasses/${imgWorks}.png`)}
+                    alt="examples of works"
+                  />
+                  <span className={styles.example__desc}>{titleWorks}</span>
+                </div>
+              )
+            );
+          }
+
           return (
             <div key={index} className={styles.example}>
               <img
@@ -27,7 +48,12 @@ const ShowsAndMasterclasses = () => {
           );
         })}
       </div>
-      <Button className={styles.btnShow}>{`Показать ещё >>`}</Button>
+      {!isHidden && (
+        <Button
+          onClick={() => setIsHidden(true)}
+          className={styles.btnShow}
+        >{`Показать ещё >>`}</Button>
+      )}
     </section>
   );
 };

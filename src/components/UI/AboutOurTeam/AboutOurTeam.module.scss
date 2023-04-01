@@ -103,3 +103,9 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 1310px) {
+  .aboutOurTeam {
+    display: none;
+  }
+}

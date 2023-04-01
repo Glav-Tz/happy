@@ -88,6 +88,12 @@
   }
 }
 
+.btnOurHeroes {
+  display: none;
+  margin: 25px 0 0 0;
+  padding: 20px 50px;
+}
+
 @media (max-width: 1600px) {
   .heroesWrapper {
     gap: calc(20px + (30 - 20) * ((100vw - 1080px) / (1600 - 1080)))
@@ -141,5 +147,9 @@
 
   .hero {
     max-width: 452px;
+  }
+
+  .btnOurHeroes {
+    display: flex;
   }
 }

@@ -1,10 +1,7 @@
 .weAreTouch {
   position: fixed;
 
-  // max-width: 555px;
-  // max-height: 505px;
-
-  padding: 30px 30px 30px 50px;
+  padding: 30px 30px 50px 30px;
 
   display: flex;
   flex-direction: column;
@@ -33,6 +30,8 @@
 }
 
 .messengersWatsApp {
+  grid-area: A;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,20 +52,22 @@
   color: #00be50;
 
   &:hover {
-    background: #00BE50;
-    color: #FFFFFF;
+    background: #00be50;
+    color: #ffffff;
 
     .svgWatsApp {
-      fill: #FFFFFF;
+      fill: #ffffff;
     }
   }
 }
 
 .svgWatsApp {
-  fill: #00BE50;
+  fill: #00be50;
 }
 
 .messengersTelegram {
+  grid-area: B;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,20 +88,22 @@
   color: #34aadf;
 
   &:hover {
-    background: #34AADF;
-    color: #FFFFFF;
+    background: #34aadf;
+    color: #ffffff;
 
     .svgTelegram {
-      fill: #FFFFFF;
+      fill: #ffffff;
     }
   }
 }
 
 .svgTelegram {
-  fill: #34AADF;
+  fill: #34aadf;
 }
 
 .messengersVkontacte {
+  grid-area: C;
+
   padding: 0;
   width: 60px;
   height: 60px;
@@ -112,18 +115,20 @@
   background: transparent;
 
   &:hover {
-    background: #2474F0;
+    background: #2474f0;
     .svgVkontacte {
-      fill: #FFFFFF;
+      fill: #ffffff;
     }
   }
 }
 
 .svgVkontacte {
-  fill: #2474F0;
+  fill: #2474f0;
 }
 
 .messengersInstagram {
+  grid-area: D;
+
   padding: 0;
   width: 60px;
   height: 60px;
@@ -135,15 +140,15 @@
   background: transparent;
 
   &:hover {
-    background: #E94062;
+    background: #e94062;
     .svgInstagram {
-      fill: #FFFFFF;
+      fill: #ffffff;
     }
   }
 }
 
 .svgInstagram {
-  fill: #E94062;
+  fill: #e94062;
 }
 
 .email {
@@ -209,4 +214,48 @@
 
   text-transform: uppercase;
   cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .wrapperSocialNetwork {
+    display: grid;
+    grid-template-areas:
+      'A B'
+      'C D';
+  }
+  .messengersVkontacte {
+    width: 120px;
+
+    justify-self: end;
+    border-radius: 30px;
+  }
+
+  .messengersInstagram {
+    width: 120px;
+
+    justify-self: start;
+    border-radius: 30px;
+  }
+
+  .email {
+    width: calc(260px + (500 - 260) * ((100vw - 320px) / (650 - 320)));
+  }
+
+  .requestText {
+    width: calc(260px + (500 - 260) * ((100vw - 320px) / (650 - 320)));
+  }
+}
+
+@media (max-width: 510px) {
+  .weAreTouch {
+    padding: 10px 10px 40px 10px;
+  }
+
+  .wrapperSocialNetwork {
+    display: grid;
+    grid-template-areas:
+      'A A'
+      'B B'
+      'C D';
+  }
 }

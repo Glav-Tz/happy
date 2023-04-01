@@ -30,7 +30,7 @@ const Consultation = () => {
       <div className={styles.description}>
         <h1 className={styles.annotationHeader}>Нужна консультация?</h1>
         <div className={styles.annotation}>
-          Позвоните нам по номеру <strong>+7 988 149-94-90</strong>, напишите в
+          Позвоните нам по номеру <strong>+7(988) 149-94-90</strong>, напишите в
           удобный Вам мессенджер или оставьте свой номер, чтобы мы сами Вам
           перезвонили ;)
         </div>

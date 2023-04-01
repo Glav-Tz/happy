@@ -1,7 +1,7 @@
 @import '../../../styles/App.scss';
 
 .reviews {
-  padding: 150px 10px;
+  padding: 110px 10px;
 
   display: flex;
   align-items: center;
@@ -22,48 +22,31 @@
   margin: 50px 0 0 0;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 380px;
-  gap: 30px;
-
-  grid-template-areas:
-    'A B'
-    'A C'
+  grid-auto-columns: 1fr;
+  grid-template-rows: 1fr;
 }
-
-@media (max-width: 1500px) {
-  .wrapperReviews {
-    grid-template-areas:
-    'A A'
-    'B C'
-  }
-}
-
 
 .reviewsVK {
-  grid-area: A;
-
-  width: 900px;
-  height: 790px;
+  max-width: 900px;
+  max-height: 790px;
 
   background: #ffffff;
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(211, 46, 135, 0.2);
 }
 
-.reviewsOne {
-  grid-area: B;
-  max-width: 430px;
-
-  background: #2474f0;
-  border-radius: 50px;
+@media (max-width: 1080px) {
+  .reviews {
+    padding: 80px 10px;
+  }
 }
 
-.reviewsTwo {
-  grid-area: C;
-  max-width: 430px;
+@media (max-width: 600px) {
+  .reviews {
+    padding: 40px 10px;
+  }
 
-  background: linear-gradient(142.05deg, #a976ea 3.08%, #ff48cc 78.09%);
-  border-radius: 50px;
+  .title {
+    font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (600 - 320)));
+  }
 }
-

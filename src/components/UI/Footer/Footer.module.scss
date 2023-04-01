@@ -96,6 +96,13 @@
   }
 }
 
+@media (max-width: 560px) {
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
 @media (max-width: 320px) {
   .footer {
     flex-direction: column;
