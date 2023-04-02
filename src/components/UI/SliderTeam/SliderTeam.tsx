@@ -4,7 +4,7 @@ import { useState } from 'react';
 import styles from './SliderTeam.module.scss';
 import Button from '../Button';
 
-import { sliderTeamData } from './data';
+import sliderTeamData from './data';
 
 import { ReactComponent as PlayIcon } from '../../../assets/icon/play.svg';
 
@@ -14,8 +14,7 @@ import { ReactComponent as RightArrow } from '../../../assets/icon/arrow/right_a
 const SliderTeam = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   return (
-    <div>
-      123212
+    <>
       {sliderTeamData.map((element) => {
         const {
           id,
@@ -89,7 +88,7 @@ const SliderTeam = () => {
           )
         );
       })}
-    </div>
+    </>
   );
 };
 
