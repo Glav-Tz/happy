@@ -148,8 +148,19 @@
   animation-fill-mode: forwards;
 }
 
-.animationOff {
-  animation: none;
+.employeeThumbnailSlide {
+  position: relative;
+  left: 0;
+
+  max-width: 433px;
+  max-height: 433px;
+
+  opacity: 0;
+
+  animation-name: appearanceImg;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes disappearanceImg {
@@ -183,6 +194,16 @@
   100% {
     opacity: 0;
     left: -100%;
+  }
+}
 
+@keyframes appearanceImg {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+  100% {
+    opacity: 1;
+    left: -100%;
   }
 }

@@ -13,61 +13,82 @@ import { ReactComponent as RightArrow } from '../../../assets/icon/arrow/right_a
 
 const SliderTeam = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  const {
-    employeeTitleName,
-    employeeTitlePost,
-    employeeDesc,
-    mainSlide,
-    secondarySlide,
-  } = sliderTeamData[currentSlide];
-
   return (
-    <div className={styles.sliderTeam}>
-      <div className={styles.sliderTeam__description}>
-        <div className={styles.employeeTitleName}> {employeeTitleName}</div>
-        <div className={styles.employeeTitlePost}>{employeeTitlePost}</div>
-        <div className={styles.employeeDesc}>{employeeDesc}</div>
-        <Button className={styles.employeeBtn}>
-          <PlayIcon className={styles.employeeBtn_icon} />
-          Видео обо мне
-        </Button>
-      </div>
-      <div className={styles.sliderTeam__mainSlide}>
-        <div className={styles.wrapperEmployeeMainSlide}>
-          <img
-            className={styles.employeeMainSlide}
-            src={require(`../../../assets/img/sliderTeam/${mainSlide}.png`)}
-            alt="employee img"
-          />
-          <img
-            className={styles.employeeSecondarySlide}
-            src={require(`../../../assets/img/sliderTeam/${secondarySlide}.png`)}
-            alt="employee img"
-          />
-        </div>
+    <div>
+      123212
+      {sliderTeamData.map((element) => {
+        const {
+          id,
+          employeeTitleName,
+          employeeTitlePost,
+          employeeDesc,
+          mainSlide,
+          secondarySlide,
+          thumbnailSlide,
+        } = element;
 
-        <div className={styles.WrapperMainSlideBtn}>
-          <button
-            onClick={(event) => {
-              event.preventDefault();
-              setCurrentSlide((prevState) => prevState + 1);
-            }}
-            className={styles.mainSlideBtn}
-            type="button"
-          >
-            <LeftArrow />
-          </button>
+        return (
+          id === currentSlide && (
+            <div key={id} className={styles.sliderTeam}>
+              <div className={styles.sliderTeam__description}>
+                <div className={styles.employeeTitleName}>
+                  {employeeTitleName}
+                </div>
+                <div className={styles.employeeTitlePost}>
+                  {employeeTitlePost}
+                </div>
+                <div className={styles.employeeDesc}>{employeeDesc}</div>
+                <Button className={styles.employeeBtn}>
+                  <PlayIcon className={styles.employeeBtn_icon} />
+                  Видео обо мне
+                </Button>
+              </div>
+              <div className={styles.sliderTeam__mainSlide}>
+                <div className={styles.wrapperEmployeeMainSlide}>
+                  <img
+                    className={styles.employeeMainSlide}
+                    src={require(`../../../assets/img/sliderTeam/${mainSlide}.png`)}
+                    alt="employee img"
+                  />
+                  <img
+                    className={styles.employeeSecondarySlide}
+                    src={require(`../../../assets/img/sliderTeam/${secondarySlide}.png`)}
+                    alt="employee img"
+                  />
+                  <img
+                    className={styles.employeeThumbnailSlide}
+                    src={require(`../../../assets/img/sliderTeam/${thumbnailSlide}.png`)}
+                    alt="employee img"
+                  />
+                </div>
 
-          <button
-            onClick={() => setCurrentSlide((prevState) => prevState - 1)}
-            className={styles.mainSlideBtn}
-            type="button"
-          >
-            <RightArrow />
-          </button>
-        </div>
-      </div>
+                <div className={styles.WrapperMainSlideBtn}>
+                  <button
+                    onClick={(event) => {
+                      event.preventDefault();
+                      setCurrentSlide((prevState) => prevState - 1);
+                    }}
+                    className={styles.mainSlideBtn}
+                    type="button"
+                  >
+                    <LeftArrow />
+                  </button>
+
+                  <button
+                    onClick={() =>
+                      setCurrentSlide((prevState) => prevState + 1)
+                    }
+                    className={styles.mainSlideBtn}
+                    type="button"
+                  >
+                    <RightArrow />
+                  </button>
+                </div>
+              </div>
+            </div>
+          )
+        );
+      })}
     </div>
   );
 };
