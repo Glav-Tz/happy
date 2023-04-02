@@ -1,8 +1,6 @@
 @import '../../../styles/App.scss';
 
 .aboutOurTeam {
-  max-width: 1095px;
-
   padding: 100px 0;
 
   display: flex;
@@ -23,89 +21,11 @@
   color: #000000;
 }
 
-.wrapperBlok {
-  min-height: 600px;
-  margin: 40px 0 0 0;
+.wrapper {
+  max-width: 1800px;
+  width: 100%;
 
-  display: flex;
-  gap: 50px;
-}
-
-.employee {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-
-  color: #000000;
-
-  &__name {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 34px;
-  }
-
-  &__post {
-    margin: 10px 0 0 0;
-
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  &__desc {
-    margin: 30px 0 0 0;
-    max-width: 615px;
-
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  &__moreDetailed {
-    margin: 50px 0 0 0;
-    padding: 20px 40px;
-    gap: 20px;
-  }
-}
-
-.sliderTeam {
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  max-width: 430px;
-}
-
-.castomBtnCarusel {
-  position: absolute;
-  width: 460px;
-
-  display: flex;
-  justify-content: space-between;
-
-  &__btnCarusel {
-    width: 74px;
-    height: 74px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border: none;
-    border-radius: 50%;
-
-    background-color: #ffffff;
-    box-shadow: 0 4px 76px rgba(211, 46, 135, 0.3);
-
-    cursor: pointer;
-  }
-}
-
-@media (max-width: 1310px) {
-  .aboutOurTeam {
-    display: none;
-  }
 }
