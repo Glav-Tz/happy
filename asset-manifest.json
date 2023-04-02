@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/happy/static/css/main.8f5779a0.css",
-    "main.js": "/happy/static/js/main.bb3517fb.js",
+    "main.css": "/happy/static/css/main.76f9ffa0.css",
+    "main.js": "/happy/static/js/main.cd1d6902.js",
     "static/media/video_4.mp4": "/happy/static/media/video_4.546dc236a9bc25d077ab.mp4",
     "static/media/video_5.mp4": "/happy/static/media/video_5.e7f5082c6006b182a50a.mp4",
     "static/media/video_1.mp4": "/happy/static/media/video_1.488e6992fdef1ba260db.mp4",
@@ -10,9 +10,12 @@
     "static/media/mainScreen.png": "/happy/static/media/mainScreen.266ec1b2c2b2e4e47cbf.png",
     "static/media/silverShow.png": "/happy/static/media/silverShow.6a71333c530d02f25dee.png",
     "static/media/soapBubbleShow.png": "/happy/static/media/soapBubbleShow.7b7718fff2cee16be038.png",
+    "static/media/slide_1_1.png": "/happy/static/media/slide_1_1.190f61f8187a289a0b22.png",
     "static/media/paintingT-shirts.png": "/happy/static/media/paintingT-shirts.96765f77aaac7ea9affd.png",
     "static/media/spiderMan.png": "/happy/static/media/spiderMan.cfb8e132440bc1fc445e.png",
+    "static/media/slide_1_2.png": "/happy/static/media/slide_1_2.36e4cb1e4d860f3de09d.png",
     "static/media/haggiWaggi.png": "/happy/static/media/haggiWaggi.b29e50ae7aff9596921f.png",
+    "static/media/slide_1_3.png": "/happy/static/media/slide_1_3.f15fcd1e134c4b5b4f2b.png",
     "static/media/puppyPatrol.png": "/happy/static/media/puppyPatrol.49cdf4184ba788fd754b.png",
     "static/media/sweetTooth.png": "/happy/static/media/sweetTooth.baddb4889e8758545ee0.png",
     "static/media/unicorn.png": "/happy/static/media/unicorn.4f1e01393074b4a91faf.png",
@@ -34,11 +37,11 @@
     "static/media/phone.svg": "/happy/static/media/phone.390848675aa9c1263d7c6ad32ba7bd2e.svg",
     "index.html": "/happy/index.html",
     "static/media/play.svg": "/happy/static/media/play.340280717916f769c35484466255d820.svg",
-    "main.8f5779a0.css.map": "/happy/static/css/main.8f5779a0.css.map",
-    "main.bb3517fb.js.map": "/happy/static/js/main.bb3517fb.js.map"
+    "main.76f9ffa0.css.map": "/happy/static/css/main.76f9ffa0.css.map",
+    "main.cd1d6902.js.map": "/happy/static/js/main.cd1d6902.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f5779a0.css",
-    "static/js/main.bb3517fb.js"
+    "static/css/main.76f9ffa0.css",
+    "static/js/main.cd1d6902.js"
   ]
 }
