@@ -1,24 +1,36 @@
 {
   "files": {
-    "main.css": "/happy/static/css/main.76f9ffa0.css",
-    "main.js": "/happy/static/js/main.23801bf3.js",
+    "main.css": "/happy/static/css/main.8455c5d0.css",
+    "main.js": "/happy/static/js/main.4a299baa.js",
     "static/media/video_4.mp4": "/happy/static/media/video_4.546dc236a9bc25d077ab.mp4",
     "static/media/video_5.mp4": "/happy/static/media/video_5.e7f5082c6006b182a50a.mp4",
     "static/media/video_1.mp4": "/happy/static/media/video_1.488e6992fdef1ba260db.mp4",
     "static/media/video_3.mp4": "/happy/static/media/video_3.fce2326acd6e95fc3cdd.mp4",
     "static/media/video_2.mp4": "/happy/static/media/video_2.6250ca0fad55da4ee3b8.mp4",
     "static/media/mainScreen.png": "/happy/static/media/mainScreen.266ec1b2c2b2e4e47cbf.png",
-    "static/media/silverShow.png": "/happy/static/media/silverShow.6a71333c530d02f25dee.png",
-    "static/media/soapBubbleShow.png": "/happy/static/media/soapBubbleShow.7b7718fff2cee16be038.png",
+    "static/media/1.png": "/happy/static/media/1.178a094a2a91e01551f4.png",
     "static/media/slide_1_1.png": "/happy/static/media/slide_1_1.190f61f8187a289a0b22.png",
-    "static/media/paintingT-shirts.png": "/happy/static/media/paintingT-shirts.96765f77aaac7ea9affd.png",
+    "static/media/2.png": "/happy/static/media/2.674e0169612782dd49f1.png",
+    "static/media/12.png": "/happy/static/media/12.8744bcbc120d591df57d.png",
+    "static/media/13.png": "/happy/static/media/13.b1af6c069c686039abc8.png",
+    "static/media/15.png": "/happy/static/media/15.95fa064411e7914b1c57.png",
+    "static/media/8.png": "/happy/static/media/8.2b6c77cfdafce40dba7a.png",
+    "static/media/9.png": "/happy/static/media/9.ef940c125528019cff84.png",
+    "static/media/7.png": "/happy/static/media/7.d1539ba81764f28004db.png",
+    "static/media/11.png": "/happy/static/media/11.79b96f7c681d5d39e0fb.png",
+    "static/media/14.png": "/happy/static/media/14.5f25850759975f7a7ef4.png",
     "static/media/spiderMan.png": "/happy/static/media/spiderMan.cfb8e132440bc1fc445e.png",
     "static/media/slide_1_2.png": "/happy/static/media/slide_1_2.36e4cb1e4d860f3de09d.png",
+    "static/media/3.png": "/happy/static/media/3.9fd901c133bca6bf0459.png",
     "static/media/haggiWaggi.png": "/happy/static/media/haggiWaggi.b29e50ae7aff9596921f.png",
     "static/media/slide_1_3.png": "/happy/static/media/slide_1_3.f15fcd1e134c4b5b4f2b.png",
     "static/media/puppyPatrol.png": "/happy/static/media/puppyPatrol.49cdf4184ba788fd754b.png",
     "static/media/sweetTooth.png": "/happy/static/media/sweetTooth.baddb4889e8758545ee0.png",
+    "static/media/4.png": "/happy/static/media/4.f811499a84e65edeea3e.png",
     "static/media/unicorn.png": "/happy/static/media/unicorn.4f1e01393074b4a91faf.png",
+    "static/media/6.png": "/happy/static/media/6.7de270a951b36da90a56.png",
+    "static/media/5.png": "/happy/static/media/5.3f589587235d9f693477.png",
+    "static/media/10.png": "/happy/static/media/10.e0f732f48d9acdcb30c1.png",
     "static/media/tickTok.png": "/happy/static/media/tickTok.592b8ed2d965c45813ff.png",
     "static/media/consultationFoto.png": "/happy/static/media/consultationFoto.b283d0d38f44644f1f59.png",
     "static/media/multiland_color.png": "/happy/static/media/multiland_color.884548b3e9be5b10bc26.png",
@@ -37,11 +49,11 @@
     "static/media/phone.svg": "/happy/static/media/phone.390848675aa9c1263d7c6ad32ba7bd2e.svg",
     "index.html": "/happy/index.html",
     "static/media/play.svg": "/happy/static/media/play.340280717916f769c35484466255d820.svg",
-    "main.76f9ffa0.css.map": "/happy/static/css/main.76f9ffa0.css.map",
-    "main.23801bf3.js.map": "/happy/static/js/main.23801bf3.js.map"
+    "main.8455c5d0.css.map": "/happy/static/css/main.8455c5d0.css.map",
+    "main.4a299baa.js.map": "/happy/static/js/main.4a299baa.js.map"
   },
   "entrypoints": [
-    "static/css/main.76f9ffa0.css",
-    "static/js/main.23801bf3.js"
+    "static/css/main.8455c5d0.css",
+    "static/js/main.4a299baa.js"
   ]
 }
