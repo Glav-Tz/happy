@@ -1,8 +1,8 @@
 /* eslint-disable import/no-dynamic-require */
 /* eslint-disable global-require */
 import { useState } from 'react';
-import styles from './SliderTeam.module.scss';
 import Button from '../Button';
+import styles from './SliderTeam.module.scss';
 
 import sliderTeamData from './data';
 
@@ -13,6 +13,7 @@ import { ReactComponent as RightArrow } from '../../../assets/icon/arrow/right_a
 
 const SliderTeam = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [maxSlideElement] = useState(sliderTeamData.length - 1);
   return (
     <>
       {sliderTeamData.map((element) => {
@@ -25,6 +26,22 @@ const SliderTeam = () => {
           secondarySlide,
           thumbnailSlide,
         } = element;
+
+        // const obj = {
+        //   employeeTitleName: '1',
+        //   employeeTitlePost: '1',
+        //   employeeDesc: '1',
+        // };
+        //
+        // setTimeout(
+        //   () => ({
+        //     ...obj,
+        //     employeeTitleName,
+        //     employeeTitlePost,
+        //     employeeDesc,
+        //   }),
+        //   1500,
+        // );
 
         return (
           id === currentSlide && (
@@ -61,7 +78,7 @@ const SliderTeam = () => {
                   />
                 </div>
 
-                <div className={styles.WrapperMainSlideBtn}>
+                <div className={styles.wrapperMainSlideBtn}>
                   <button
                     onClick={(event) => {
                       event.preventDefault();
@@ -74,9 +91,11 @@ const SliderTeam = () => {
                   </button>
 
                   <button
-                    onClick={() =>
-                      setCurrentSlide((prevState) => prevState + 1)
-                    }
+                    onClick={() => {
+                      if (currentSlide !== maxSlideElement) {
+                        setCurrentSlide((prevState) => prevState + 1);
+                      }
+                    }}
                     className={styles.mainSlideBtn}
                     type="button"
                   >

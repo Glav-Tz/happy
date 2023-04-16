@@ -36,6 +36,21 @@ const ShowsAndMasterclasses = () => {
             );
           }
 
+          if (!isHidden) {
+            return (
+              index < 6 && (
+                <div key={index} className={styles.example}>
+                  <img
+                    className={styles.example__img}
+                    src={require(`../../../assets/img/ShowsAndMasterclasses/${imgWorks}.png`)}
+                    alt="examples of works"
+                  />
+                  <span className={styles.example__desc}>{titleWorks}</span>
+                </div>
+              )
+            );
+          }
+
           return (
             <div key={index} className={styles.example}>
               <img

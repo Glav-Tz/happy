@@ -1,13 +1,14 @@
-@import '../../../styles/App.scss';
+@import "../../../styles/App.scss";
 
 .aboutOurTeam {
-  padding: 100px 0;
+  padding: 100px 0 100px 100px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .title {
@@ -28,4 +29,21 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 50px;
+}
+
+@media (max-width: 1080px) {
+  .aboutOurTeam {
+    padding: 100px 0;
+  }
+
+  .wrapper {
+    align-items: center;
+  }
+}
+
+@media (max-width: 690px) {
+  .aboutOurTeam {
+    padding: 30px 10px;
+  }
 }
