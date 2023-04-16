@@ -17,7 +17,7 @@ const ShowsAndMasterclasses = () => {
       id="shows-and-masterclasses"
       className={`${styles.showsAndMasterclasses} ${styles.container}`}
     >
-      <h1 className={styles.title}>Шоу и мастерклассы</h1>
+      <h1 className={styles.title}>Шоу и мастер-классы</h1>
       <div className={styles.examplesWorks}>
         {examplesWorksData.map((element, index) => {
           const { imgWorks, titleWorks } = element;
