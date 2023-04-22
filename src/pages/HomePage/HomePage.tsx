@@ -13,7 +13,7 @@ const HomePage = () => {
 
   return (
     <>
-      <MainScreen setIsActive={setIsActive} />
+      <MainScreen />
       <OurHeroes />
       <Activity />
       <AboutOurTeam />

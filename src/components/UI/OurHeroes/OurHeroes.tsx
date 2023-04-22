@@ -74,7 +74,7 @@ const OurHeroes = () => {
           );
         })}
       </div>
-      {!isHidden && (
+      {isMobile && !isHidden && (
         <Button
           onClick={() => setIsHidden(true)}
           className={styles.btnOurHeroes}

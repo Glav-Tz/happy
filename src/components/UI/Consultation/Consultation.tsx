@@ -16,6 +16,20 @@ const handleSubmit = (event: SyntheticEvent) => {
   event.preventDefault();
 };
 
+const openWhatsApp = (e: React.SyntheticEvent) => {
+  e.preventDefault();
+
+  window.open(
+    'https://api.whatsapp.com/send/?phone=79881499490&text&type=phone_number&app_absent=0',
+  );
+};
+
+const openTelegram = (e: React.SyntheticEvent) => {
+  e.preventDefault();
+
+  window.open('https://t.me/animatory_tuapse');
+};
+
 const Consultation = () => {
   const [phone, setPhone] = useState('');
 
@@ -57,11 +71,14 @@ const Consultation = () => {
             />
           </form>
           <div className={styles.dtnWrapper}>
-            <Button className={styles.messengersWatsApp}>
+            <Button onClick={openWhatsApp} className={styles.messengersWatsApp}>
               <WhatsAppIcon className={styles.svgWatsApp} />
               <span className={styles.svgWatsAppText}> WhatsApp</span>
             </Button>
-            <Button className={styles.messengersTelegram}>
+            <Button
+              onClick={openTelegram}
+              className={styles.messengersTelegram}
+            >
               <TelegramIcon className={styles.svgTelegram} />
               <span className={styles.svgTelegramText}>Telegram</span>
             </Button>

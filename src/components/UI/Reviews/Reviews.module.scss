@@ -1,4 +1,4 @@
-@import '../../../styles/App.scss';
+@import "../../../styles/App.scss";
 
 .reviews {
   padding: 110px 10px;
@@ -27,11 +27,13 @@
 }
 
 .reviewsVK {
+  padding: 10px;
+
   max-width: 900px;
-  max-height: 790px;
+  height: auto;
 
   background: #ffffff;
-  border-radius: 20px;
+  border-radius: 20px !important;
   box-shadow: 0 4px 30px rgba(211, 46, 135, 0.2);
 }
 

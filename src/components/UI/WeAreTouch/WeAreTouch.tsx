@@ -1,9 +1,9 @@
 import { SyntheticEvent, useState } from 'react';
 
-import { ReactComponent as TelegramIcon } from '../../../assets/icon/messengers/color/te.svg';
-import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/messengers/color/wa.svg';
-import { ReactComponent as VkontacteIcon } from '../../../assets/icon/messengers/color/vk.svg';
 import { ReactComponent as InstagramIcon } from '../../../assets/icon/messengers/color/inst.svg';
+import { ReactComponent as TelegramIcon } from '../../../assets/icon/messengers/color/te.svg';
+import { ReactComponent as VkontacteIcon } from '../../../assets/icon/messengers/color/vk.svg';
+import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/messengers/color/wa.svg';
 import Button from '../Button';
 import styles from './WeAreTouch.module.scss';
 
@@ -16,6 +16,36 @@ const handleSubmit = (event: SyntheticEvent) => {
   event.preventDefault();
 };
 
+const openWhatsApp = (e: React.SyntheticEvent) => {
+  e.preventDefault();
+
+  window.open(
+    'https://api.whatsapp.com/send/?phone=79881499490&text&type=phone_number&app_absent=0',
+  );
+};
+
+const openTelegram = (e: React.SyntheticEvent) => {
+  e.preventDefault();
+
+  window.open('https://t.me/animatory_tuapse');
+};
+
+const openVkontacte = (e: React.SyntheticEvent) => {
+  e.preventDefault();
+
+  window.open(
+    'https://vk.com/animatory_tuapse?trackcode=bf292649MCnj3f9yuMtR_A_YF6QfmKey1VYwIpxI6UX-fn5t67yESC9jYn_Vskb0FNckqhSrlajlWDI6n1TzRe90IRmK',
+  );
+};
+
+const openInstagram = (e: React.SyntheticEvent) => {
+  e.preventDefault();
+
+  window.open(
+    'https://www.instagram.com/invites/contact/?i=125jwlq6n25ef&utm_content=zm2y7v',
+  );
+};
+
 const WeAreTouch = ({ className }: Props) => {
   const [mail, setMail] = useState('');
   const [requestText, setRequestText] = useState('');
@@ -24,18 +54,18 @@ const WeAreTouch = ({ className }: Props) => {
     <form className={externalClasses.join(' ')} onSubmit={handleSubmit}>
       <div className={styles.title}>Мы на связи!</div>
       <div className={styles.wrapperSocialNetwork}>
-        <Button className={styles.messengersWatsApp}>
+        <Button onClick={openWhatsApp} className={styles.messengersWatsApp}>
           <WhatsAppIcon className={styles.svgWatsApp} />
           WhatsApp
         </Button>
-        <Button className={styles.messengersTelegram}>
+        <Button onClick={openTelegram} className={styles.messengersTelegram}>
           <TelegramIcon className={styles.svgTelegram} />
           Telegram
         </Button>
-        <Button className={styles.messengersVkontacte}>
+        <Button onClick={openVkontacte} className={styles.messengersVkontacte}>
           <VkontacteIcon className={styles.svgVkontacte} />
         </Button>
-        <Button className={styles.messengersInstagram}>
+        <Button onClick={openInstagram} className={styles.messengersInstagram}>
           <InstagramIcon className={styles.svgInstagram} />
         </Button>
       </div>
