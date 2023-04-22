@@ -21,10 +21,12 @@
     ></script>
 
     <script type="text/javascript">
-      document.addEventListener(
-        'DOMContentLoaded',
-        feedback_vk.init({ id: 'feedback_vk', gid: 211511715, count: 5 }),
-      );
+      window.onload = () => {
+        document.addEventListener(
+          'DOMContentLoaded',
+          feedback_vk.init({ id: 'feedback_vk', gid: 211511715, count: 5 }),
+        );
+      };
     </script>
   </body>
 </html>
