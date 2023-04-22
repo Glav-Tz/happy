@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/happy/static/css/main.8455c5d0.css",
-    "main.js": "/happy/static/js/main.4a299baa.js",
+    "main.css": "/happy/static/css/main.f821e9cd.css",
+    "main.js": "/happy/static/js/main.7aa65db6.js",
     "static/media/video_4.mp4": "/happy/static/media/video_4.546dc236a9bc25d077ab.mp4",
     "static/media/video_5.mp4": "/happy/static/media/video_5.e7f5082c6006b182a50a.mp4",
     "static/media/video_1.mp4": "/happy/static/media/video_1.488e6992fdef1ba260db.mp4",
@@ -11,14 +11,19 @@
     "static/media/1.png": "/happy/static/media/1.178a094a2a91e01551f4.png",
     "static/media/slide_1_1.png": "/happy/static/media/slide_1_1.190f61f8187a289a0b22.png",
     "static/media/2.png": "/happy/static/media/2.674e0169612782dd49f1.png",
+    "static/media/littleMermaid.png": "/happy/static/media/littleMermaid.a0e2050492b23c466a65.png",
     "static/media/12.png": "/happy/static/media/12.8744bcbc120d591df57d.png",
     "static/media/13.png": "/happy/static/media/13.b1af6c069c686039abc8.png",
+    "static/media/brawlStars.png": "/happy/static/media/brawlStars.d6bd6b9bf9147b252068.png",
     "static/media/15.png": "/happy/static/media/15.95fa064411e7914b1c57.png",
+    "static/media/rose.png": "/happy/static/media/rose.065cf82631b3556ca6cf.png",
     "static/media/8.png": "/happy/static/media/8.2b6c77cfdafce40dba7a.png",
     "static/media/9.png": "/happy/static/media/9.ef940c125528019cff84.png",
+    "static/media/youTube.png": "/happy/static/media/youTube.6ac520022c5f700fee64.png",
     "static/media/7.png": "/happy/static/media/7.d1539ba81764f28004db.png",
     "static/media/11.png": "/happy/static/media/11.79b96f7c681d5d39e0fb.png",
     "static/media/14.png": "/happy/static/media/14.5f25850759975f7a7ef4.png",
+    "static/media/minecraft.png": "/happy/static/media/minecraft.d2a54708732730278824.png",
     "static/media/spiderMan.png": "/happy/static/media/spiderMan.cfb8e132440bc1fc445e.png",
     "static/media/slide_1_2.png": "/happy/static/media/slide_1_2.36e4cb1e4d860f3de09d.png",
     "static/media/3.png": "/happy/static/media/3.9fd901c133bca6bf0459.png",
@@ -42,18 +47,18 @@
     "static/media/wa.svg": "/happy/static/media/wa.2adee21db1e4918f0c43a1adf19b112c.svg",
     "static/media/vk.svg": "/happy/static/media/vk.45ec8fccfc926633b21faaf5f79b6bab.svg",
     "static/media/cross.svg": "/happy/static/media/cross.da9c1a8120fddf6a4a6d9e2bdd97f7eb.svg",
+    "index.html": "/happy/index.html",
     "static/media/tele.svg": "/happy/static/media/tele.39becdf19fb876e76fb3308638310985.svg",
     "static/media/te.svg": "/happy/static/media/te.c49be097dc33baf5436e59e3340120a9.svg",
     "static/media/left_arrow.svg": "/happy/static/media/left_arrow.bb1e4cc1b78cbb2d6c5c2c613c2f5780.svg",
     "static/media/right_arrow.svg": "/happy/static/media/right_arrow.df21c31d0baf18a82a07c6ad35c455e0.svg",
     "static/media/phone.svg": "/happy/static/media/phone.390848675aa9c1263d7c6ad32ba7bd2e.svg",
-    "index.html": "/happy/index.html",
     "static/media/play.svg": "/happy/static/media/play.340280717916f769c35484466255d820.svg",
-    "main.8455c5d0.css.map": "/happy/static/css/main.8455c5d0.css.map",
-    "main.4a299baa.js.map": "/happy/static/js/main.4a299baa.js.map"
+    "main.f821e9cd.css.map": "/happy/static/css/main.f821e9cd.css.map",
+    "main.7aa65db6.js.map": "/happy/static/js/main.7aa65db6.js.map"
   },
   "entrypoints": [
-    "static/css/main.8455c5d0.css",
-    "static/js/main.4a299baa.js"
+    "static/css/main.f821e9cd.css",
+    "static/js/main.7aa65db6.js"
   ]
 }
