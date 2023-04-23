@@ -14,9 +14,9 @@ const sliderTeamData = [
           свои навыки дизайнера и ведущей детских праздников, разрабатывая
           крутые игровые программы и создавая для них свой дизайнерский
           реквизит.`,
-    mainSlide: 'slide_1_1',
-    secondarySlide: 'slide_1_1',
-    thumbnailSlide: 'slide_1_2',
+    mainSlide: 0,
+    secondarySlide: 1,
+    thumbnailSlide: 2,
   },
   {
     id: 1,
@@ -29,9 +29,9 @@ const sliderTeamData = [
           предполагает независимые способы реализации переосмысления внешнеэкономических 
           политик. В своём стремлении повысить качество жизни, они забывают, что базовый 
           вектор развития прекрасно подходит для реализации новых принципов формирования`,
-    mainSlide: 'slide_1_1',
-    secondarySlide: 'slide_1_2',
-    thumbnailSlide: 'slide_1_3',
+    mainSlide: 1,
+    secondarySlide: 2,
+    thumbnailSlide: 3,
   },
   {
     id: 2,
@@ -43,9 +43,9 @@ const sliderTeamData = [
           предполагает независимые способы реализации переосмысления внешнеэкономических 
           политик. В своём стремлении повысить качество жизни, они забывают, что базовый 
           вектор развития прекрасно подходит для реализации новых принципов формирования`,
-    mainSlide: 'slide_1_2',
-    secondarySlide: 'slide_1_3',
-    thumbnailSlide: 'slide_1_3',
+    mainSlide: 2,
+    secondarySlide: 3,
+    thumbnailSlide: 4,
   },
 ];
 

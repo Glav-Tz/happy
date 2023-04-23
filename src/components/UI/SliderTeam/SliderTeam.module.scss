@@ -139,6 +139,8 @@
   animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+
+  pointer-events: none;
 }
 
 .employeeSecondarySlide {
@@ -170,6 +172,88 @@
   animation-fill-mode: forwards;
 }
 
+.employeeMainSlideReverse {
+  position: relative;
+  left: 0;
+
+  max-width: 570px;
+  height: auto;
+
+  opacity: 1;
+
+  animation-name: disappearanceImgRev;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  pointer-events: none;
+}
+
+.employeeSecondarySlideReverse {
+  position: relative;
+  left: 0;
+
+  max-width: 410px;
+  height: auto;
+
+  animation-name: transitionImgRev;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.employeeThumbnailSlideReverse {
+  position: relative;
+  left: 0;
+
+  width: 100%;
+  max-width: 410px;
+  height: auto;
+
+  opacity: 0;
+
+  animation-name: appearanceImgRev;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes disappearanceImgRev {
+  0% {
+    opacity: 0;
+    left: -100%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes transitionImgRev {
+  0% {
+    left: -100%;
+    width: 100%;
+    max-width: calc(400px + (570 - 400) * ((100vw - 1080px) / (1980 - 1080)));
+  }
+  100% {
+    left: 0;
+    width: 100%;
+    max-width: calc(280px + (410 - 280) * ((100vw - 1080px) / (1980 - 1080)));
+    height: auto;
+  }
+}
+
+@keyframes appearanceImgRev {
+  0% {
+    opacity: 1;
+    left: -100%;
+  }
+  100% {
+    opacity: 0;
+    left: 0;
+  }
+}
+
 @keyframes disappearanceImg {
   0% {
     opacity: 1;
@@ -193,6 +277,17 @@
   }
 }
 
+@keyframes appearanceImg {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+  100% {
+    opacity: 1;
+    left: -100%;
+  }
+}
+
 @keyframes changingText {
   0% {
     opacity: 1;
@@ -204,13 +299,13 @@
   }
 }
 
-@keyframes appearanceImg {
+@keyframes changingTextRev {
   0% {
-    opacity: 0;
+    opacity: 1;
     left: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
     left: -100%;
   }
 }
@@ -244,9 +339,18 @@
   .employeeThumbnailSlide {
     max-width: calc(280px + (410 - 280) * ((100vw - 1080px) / (1980 - 1080)));
   }
-  // .wrapperMainSlideBtn {
-  //   right: calc(25px + (-55 - (-5)) * ((100vw - 1080px) / (1980 - 1080)));
-  // }
+
+  .employeeMainSlideReverse {
+    max-width: calc(400px + (570 - 400) * ((100vw - 1080px) / (1980 - 1080)));
+  }
+
+  .employeeSecondarySlideReverse {
+    max-width: calc(280px + (410 - 280) * ((100vw - 1080px) / (1980 - 1080)));
+  }
+
+  .employeeThumbnailSlideReverse {
+    max-width: calc(280px + (410 - 280) * ((100vw - 1080px) / (1980 - 1080)));
+  }
 }
 
 @media (max-width: 1600px) {

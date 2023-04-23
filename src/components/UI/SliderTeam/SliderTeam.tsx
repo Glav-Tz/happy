@@ -11,9 +11,15 @@ import { ReactComponent as PlayIcon } from '../../../assets/icon/play.svg';
 import { ReactComponent as LeftArrow } from '../../../assets/icon/arrow/left_arrow.svg';
 import { ReactComponent as RightArrow } from '../../../assets/icon/arrow/right_arrow.svg';
 
-const SliderTeam = () => {
+type Props = {
+  setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const SliderTeam = ({ setIsActive }: Props) => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [reverseSlide, setReverseSlide] = useState(false);
   const [maxSlideElement] = useState(sliderTeamData.length - 1);
+
   return (
     <>
       {sliderTeamData.map((element) => {
@@ -27,22 +33,6 @@ const SliderTeam = () => {
           thumbnailSlide,
         } = element;
 
-        // const obj = {
-        //   employeeTitleName: '1',
-        //   employeeTitlePost: '1',
-        //   employeeDesc: '1',
-        // };
-        //
-        // setTimeout(
-        //   () => ({
-        //     ...obj,
-        //     employeeTitleName,
-        //     employeeTitlePost,
-        //     employeeDesc,
-        //   }),
-        //   1500,
-        // );
-
         return (
           id === currentSlide && (
             <div key={id} className={styles.sliderTeam}>
@@ -54,7 +44,10 @@ const SliderTeam = () => {
                   {employeeTitlePost}
                 </div>
                 <div className={styles.employeeDesc}>{employeeDesc}</div>
-                <Button className={styles.employeeBtn}>
+                <Button
+                  onClick={() => setIsActive((prevState) => !prevState)}
+                  className={styles.employeeBtn}
+                >
                   <PlayIcon className={styles.employeeBtn_icon} />
                   Видео обо мне
                 </Button>
@@ -62,27 +55,59 @@ const SliderTeam = () => {
               <div className={styles.sliderTeam__mainSlide}>
                 <div className={styles.wrapperEmployeeMainSlide}>
                   <img
-                    className={styles.employeeMainSlide}
-                    src={require(`../../../assets/img/sliderTeam/${mainSlide}.png`)}
+                    className={
+                      reverseSlide
+                        ? styles.employeeMainSlideReverse
+                        : styles.employeeMainSlide
+                    }
+                    src={
+                      reverseSlide
+                        ? require(`../../../assets/img/sliderTeam/slide_${
+                            mainSlide + 1
+                          }.png`)
+                        : require(`../../../assets/img/sliderTeam/slide_${mainSlide}.png`)
+                    }
                     alt="employee img"
                   />
                   <img
-                    className={styles.employeeSecondarySlide}
-                    src={require(`../../../assets/img/sliderTeam/${secondarySlide}.png`)}
+                    className={
+                      reverseSlide
+                        ? styles.employeeSecondarySlideReverse
+                        : styles.employeeSecondarySlide
+                    }
+                    src={
+                      reverseSlide
+                        ? require(`../../../assets/img/sliderTeam/slide_${
+                            secondarySlide + 1
+                          }.png`)
+                        : require(`../../../assets/img/sliderTeam/slide_${secondarySlide}.png`)
+                    }
                     alt="employee img"
                   />
                   <img
-                    className={styles.employeeThumbnailSlide}
-                    src={require(`../../../assets/img/sliderTeam/${thumbnailSlide}.png`)}
+                    className={
+                      reverseSlide
+                        ? styles.employeeThumbnailSlideReverse
+                        : styles.employeeThumbnailSlide
+                    }
+                    src={
+                      reverseSlide
+                        ? require(`../../../assets/img/sliderTeam/slide_${
+                            thumbnailSlide + 1
+                          }.png`)
+                        : require(`../../../assets/img/sliderTeam/slide_${thumbnailSlide}.png`)
+                    }
                     alt="employee img"
                   />
                 </div>
 
                 <div className={styles.wrapperMainSlideBtn}>
                   <button
-                    onClick={(event) => {
-                      event.preventDefault();
-                      setCurrentSlide((prevState) => prevState - 1);
+                    onClick={() => {
+                      if (currentSlide !== 0) {
+                        setReverseSlide(true);
+                        setCurrentSlide((prevState) => prevState - 1);
+                      }
                     }}
                     className={styles.mainSlideBtn}
                     type="button"
@@ -92,6 +117,7 @@ const SliderTeam = () => {
 
                   <button
                     onClick={() => {
+                      setReverseSlide(false);
                       if (currentSlide !== maxSlideElement) {
                         setCurrentSlide((prevState) => prevState + 1);
                       }

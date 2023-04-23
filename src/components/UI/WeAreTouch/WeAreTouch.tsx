@@ -1,4 +1,5 @@
-import { SyntheticEvent, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { useRef, useState } from 'react';
 
 import { ReactComponent as InstagramIcon } from '../../../assets/icon/messengers/color/inst.svg';
 import { ReactComponent as TelegramIcon } from '../../../assets/icon/messengers/color/te.svg';
@@ -9,11 +10,6 @@ import styles from './WeAreTouch.module.scss';
 
 type Props = {
   className?: string;
-};
-
-const handleSubmit = (event: SyntheticEvent) => {
-  console.log('ушло в небытье');
-  event.preventDefault();
 };
 
 const openWhatsApp = (e: React.SyntheticEvent) => {
@@ -47,11 +43,46 @@ const openInstagram = (e: React.SyntheticEvent) => {
 };
 
 const WeAreTouch = ({ className }: Props) => {
+  const [isDisable, setIsDisable] = useState(false);
   const [mail, setMail] = useState('');
   const [requestText, setRequestText] = useState('');
   const externalClasses = [styles.weAreTouch, className];
+
+  const formRef = useRef<HTMLFormElement | null>(null);
+
+  const handleSubmit = (e: React.SyntheticEvent) => {
+    e.preventDefault();
+
+    if (formRef.current) {
+      emailjs
+        .sendForm(
+          'service_85ria8h',
+          'template_k1dc9ik',
+          formRef.current,
+          'NuEY2PqJQTgTiz2fx',
+        )
+        .then(
+          (result) => {
+            if (result.status === 200) {
+              setIsDisable(true);
+              formRef.current?.reset();
+            }
+          },
+          (error) => {
+            if (error.text) {
+              alert('Попробуйте ещё раз');
+            }
+          },
+        );
+    }
+  };
+
   return (
-    <form className={externalClasses.join(' ')} onSubmit={handleSubmit}>
+    <form
+      ref={formRef}
+      className={externalClasses.join(' ')}
+      onSubmit={handleSubmit}
+    >
       <div className={styles.title}>Мы на связи!</div>
       <div className={styles.wrapperSocialNetwork}>
         <Button onClick={openWhatsApp} className={styles.messengersWatsApp}>
@@ -78,6 +109,8 @@ const WeAreTouch = ({ className }: Props) => {
           value={mail}
           onChange={(event) => setMail(event.currentTarget.value)}
           placeholder="Ваш email"
+          disabled={isDisable}
+          name="email"
         />
       </label>
 
@@ -88,10 +121,17 @@ const WeAreTouch = ({ className }: Props) => {
           value={requestText}
           onChange={(event) => setRequestText(event.currentTarget.value)}
           placeholder="Ваш вопрос"
+          disabled={isDisable}
+          name="massage"
         />
       </label>
 
-      <input className={styles.btnSubmit} type="submit" value="Отправить" />
+      <input
+        disabled={isDisable}
+        className={styles.btnSubmit}
+        type="submit"
+        value="Отправить"
+      />
     </form>
   );
 };

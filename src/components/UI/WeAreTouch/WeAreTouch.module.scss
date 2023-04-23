@@ -214,14 +214,18 @@
 
   text-transform: uppercase;
   cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(180deg, #ff9cc2 0%, #e83752 100%);
+  }
 }
 
 @media (max-width: 650px) {
   .wrapperSocialNetwork {
     display: grid;
     grid-template-areas:
-      'A B'
-      'C D';
+      "A B"
+      "C D";
   }
   .messengersVkontacte {
     width: 120px;
@@ -254,8 +258,8 @@
   .wrapperSocialNetwork {
     display: grid;
     grid-template-areas:
-      'A A'
-      'B B'
-      'C D';
+      "A A"
+      "B B"
+      "C D";
   }
 }

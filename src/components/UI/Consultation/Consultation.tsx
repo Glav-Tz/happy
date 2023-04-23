@@ -1,20 +1,14 @@
 /* eslint-disable global-require */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import { SyntheticEvent, useState } from 'react';
-
+import emailjs from '@emailjs/browser';
+import { useRef, useState } from 'react';
 import PhoneInput from 'react-phone-input-2';
-// import 'react-phone-input-2/lib/style.css';
 
 import styles from './Consultation.module.scss';
 
 import { ReactComponent as TelegramIcon } from '../../../assets/icon/messengers/color/te.svg';
 import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/messengers/color/wa.svg';
 import Button from '../Button';
-
-const handleSubmit = (event: SyntheticEvent) => {
-  console.log('ушло в небытье');
-  event.preventDefault();
-};
 
 const openWhatsApp = (e: React.SyntheticEvent) => {
   e.preventDefault();
@@ -32,6 +26,36 @@ const openTelegram = (e: React.SyntheticEvent) => {
 
 const Consultation = () => {
   const [phone, setPhone] = useState('');
+  const [isDisable, setIsDisable] = useState(false);
+
+  const formRef = useRef<HTMLFormElement | null>(null);
+
+  const sendEmailConsultation = (e: React.SyntheticEvent) => {
+    e.preventDefault();
+
+    if (formRef.current) {
+      emailjs
+        .sendForm(
+          'service_85ria8h',
+          'template_bklhv5e',
+          formRef.current,
+          'NuEY2PqJQTgTiz2fx',
+        )
+        .then(
+          (result) => {
+            if (result.status === 200) {
+              setIsDisable(true);
+              setPhone('');
+            }
+          },
+          (error) => {
+            if (error.text) {
+              alert('Попробуйте ещё раз');
+            }
+          },
+        );
+    }
+  };
 
   return (
     <section className={styles.consultation}>
@@ -49,7 +73,11 @@ const Consultation = () => {
           перезвонили ;)
         </div>
         <div className={styles.feedback}>
-          <form className={styles.phoneWrapper} onSubmit={handleSubmit}>
+          <form
+            className={styles.phoneWrapper}
+            ref={formRef}
+            onSubmit={sendEmailConsultation}
+          >
             <label htmlFor="phone">
               <PhoneInput
                 countryCodeEditable={false}
@@ -62,12 +90,17 @@ const Consultation = () => {
                 containerClass={styles.phone}
                 inputClass={styles.phone_input}
                 dropdownStyle={{ display: 'none' }}
+                disabled={isDisable}
+                inputProps={{
+                  name: 'telephone',
+                }}
               />
             </label>
             <input
               className={styles.dtnPhone}
               type="submit"
               value="Отправить"
+              disabled={isDisable}
             />
           </form>
           <div className={styles.dtnWrapper}>

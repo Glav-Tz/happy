@@ -1,8 +1,12 @@
 import Partners from '../Partners';
-import styles from './AboutOurTeam.module.scss';
 import SliderTeam from '../SliderTeam';
+import styles from './AboutOurTeam.module.scss';
 
-const AboutOurTeam = () => {
+type Props = {
+  setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const AboutOurTeam = ({ setIsActive }: Props) => {
   return (
     <section
       id="about-our-team"
@@ -10,7 +14,7 @@ const AboutOurTeam = () => {
     >
       <h1 className={styles.title}>О нас</h1>
       <div className={styles.wrapper}>
-        <SliderTeam />
+        <SliderTeam setIsActive={setIsActive} />
         <Partners />
       </div>
     </section>
