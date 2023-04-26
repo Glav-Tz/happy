@@ -25,12 +25,14 @@
 }
 
 .blackout {
-  position: absolute;
+  position: fixed;
 
   min-width: 100%;
   min-height: 100%;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
 
   display: flex;
   justify-content: center;
@@ -47,7 +49,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, 80%);
+  transform: translate(-50%, -50%);
 
   max-width: 600px;
   height: 400px;
