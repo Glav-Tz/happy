@@ -31,6 +31,7 @@ const SliderTeam = ({ setIsActive }: Props) => {
           mainSlide,
           secondarySlide,
           thumbnailSlide,
+          video,
         } = element;
 
         return (
@@ -44,13 +45,15 @@ const SliderTeam = ({ setIsActive }: Props) => {
                   {employeeTitlePost}
                 </div>
                 <div className={styles.employeeDesc}>{employeeDesc}</div>
-                <Button
-                  onClick={() => setIsActive((prevState) => !prevState)}
-                  className={styles.employeeBtn}
-                >
-                  <PlayIcon className={styles.employeeBtn_icon} />
-                  Видео обо мне
-                </Button>
+                {video ? (
+                  <Button
+                    onClick={() => setIsActive((prevState) => !prevState)}
+                    className={styles.employeeBtn}
+                  >
+                    <PlayIcon className={styles.employeeBtn_icon} />
+                    Видео обо мне
+                  </Button>
+                ) : null}
               </div>
               <div className={styles.sliderTeam__mainSlide}>
                 <div className={styles.wrapperEmployeeMainSlide}>

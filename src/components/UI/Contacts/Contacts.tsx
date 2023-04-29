@@ -1,4 +1,4 @@
-import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
+import { Map, Placemark, YMaps } from '@pbe/react-yandex-maps';
 import WeAreTouch from '../WeAreTouch';
 import styles from './Contacts.module.scss';
 
@@ -22,6 +22,7 @@ const Contacts = () => {
           defaultState={{
             center: [44.095237186399, 39.07548960021136],
             zoom: 18,
+            behaviors: ['drag'],
           }}
         >
           <Placemark

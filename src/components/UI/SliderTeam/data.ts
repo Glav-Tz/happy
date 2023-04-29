@@ -17,6 +17,7 @@ const sliderTeamData = [
     mainSlide: 0,
     secondarySlide: 1,
     thumbnailSlide: 2,
+    video: true,
   },
   {
     id: 1,
@@ -32,6 +33,7 @@ const sliderTeamData = [
     mainSlide: 1,
     secondarySlide: 2,
     thumbnailSlide: 3,
+    video: false,
   },
   {
     id: 2,
@@ -46,6 +48,7 @@ const sliderTeamData = [
     mainSlide: 2,
     secondarySlide: 3,
     thumbnailSlide: 4,
+    video: false,
   },
 ];
 
