@@ -1,15 +1,16 @@
-@import '../../../styles/App.scss';
+@import "../../../styles/App.scss";
 
 .wrapperSticky {
   position: fixed;
   top: 0;
 
+  width: 100%;
   min-height: 150px;
 
   display: flex;
   align-items: center;
 
-  z-index: 4;
+  z-index: 30;
 }
 
 .header {
@@ -21,7 +22,7 @@
   grid-template-rows: auto;
   gap: 20px;
 
-  grid-template-areas: 'A B C';
+  grid-template-areas: "A B C";
 
   color: #ffffff;
 }
@@ -43,6 +44,8 @@
   background-color: #ffffff;
 
   cursor: pointer;
+
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.2));
 }
 
 .WhatsAppIcon {
@@ -76,6 +79,8 @@
 
   border-radius: 30px;
   background-color: #ffffff;
+
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.2));
 }
 
 .phoneIcon {
@@ -150,8 +155,8 @@
     grid-template-rows: 1fr 1fr;
 
     grid-template-areas:
-      'A C'
-      'B B';
+      "A C"
+      "B B";
     align-items: flex-start;
   }
 }
@@ -181,7 +186,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 
-    grid-template-areas: 'A B C';
+    grid-template-areas: "A B C";
     padding: 0 10px;
     gap: 0;
   }
@@ -216,12 +221,12 @@
 
 @media (max-width: 785px) {
   .header {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
 
     grid-template-areas:
-      'A C'
-      'B B';
+      "A C"
+      "B B";
     gap: 10px;
   }
 
@@ -275,10 +280,6 @@
 }
 
 @media (max-width: 450px) {
-  .wrapperSticky {
-    transform: translateY(170px);
-  }
-
   .header {
     padding: 0;
     gap: 10px;

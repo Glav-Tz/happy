@@ -194,6 +194,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    text-align: center;
   }
 
   .feedback {
@@ -209,7 +211,7 @@
 
   .annotation {
     padding: 0 10px;
-    text-align: justify;
+    text-align: center;
   }
 
   .phoneWrapper {

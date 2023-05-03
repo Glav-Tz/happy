@@ -3,10 +3,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from 'react';
 import { useIsMobile } from '../../../helpFunction/hooks';
-import styles from './OurHeroes.module.scss';
-import { hero, categories } from './data';
-import ButtonHero from './components';
 import Button from '../Button';
+import styles from './OurHeroes.module.scss';
+import ButtonHero from './components';
+import { categories, hero } from './data';
 
 const OurHeroes = () => {
   const isMobile = useIsMobile();

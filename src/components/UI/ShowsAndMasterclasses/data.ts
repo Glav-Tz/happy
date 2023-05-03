@@ -21,7 +21,7 @@ const examplesWorksData = [
   },
   {
     imgWorks: '6',
-    titleWorks: 'Разукрась пряник',
+    titleWorks: 'Роспись Пряников',
   },
   {
     imgWorks: '7',
@@ -33,27 +33,27 @@ const examplesWorksData = [
   },
   {
     imgWorks: '9',
-    titleWorks: 'Создание мячиков-антистресс',
-  },
-  {
-    imgWorks: '10',
     titleWorks: 'Создание слаймов',
   },
   {
-    imgWorks: '11',
-    titleWorks: 'Мыловарение',
+    imgWorks: '10',
+    titleWorks: 'Создание мячиков',
   },
   {
-    imgWorks: '12',
+    imgWorks: '11',
     titleWorks: 'Создание фигур из шаров',
   },
   {
+    imgWorks: '12',
+    titleWorks: 'Кенди-бар',
+  },
+  {
     imgWorks: '13',
-    titleWorks: 'Аренда фотозон',
+    titleWorks: 'Мыловарение',
   },
   {
     imgWorks: '14',
-    titleWorks: 'Кенди-бар',
+    titleWorks: 'Аренда фотозон',
   },
   {
     imgWorks: '15',

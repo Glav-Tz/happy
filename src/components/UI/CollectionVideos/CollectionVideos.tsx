@@ -11,7 +11,7 @@ const CollectionVideos = () => {
       id="collection-videos"
       className={`${styles.collectionVideos} ${styles.container}`}
     >
-      <h1 className={styles.title}>Видео с праздинков</h1>
+      <h1 className={styles.title}>Видео с праздников</h1>
 
       <div className={styles.sliderVideo}>
         {dataOfCarusel.map((element, index) => {
