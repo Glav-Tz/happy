@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/happy/static/css/main.1e0dd274.css",
-    "main.js": "/happy/static/js/main.14fe7e96.js",
+    "main.css": "/happy/static/css/main.cddfa459.css",
+    "main.js": "/happy/static/js/main.7aebc4ed.js",
     "static/media/video_1.mp4": "/happy/static/media/video_1.488e6992fdef1ba260db.mp4",
     "static/media/video_4.mp4": "/happy/static/media/video_4.546dc236a9bc25d077ab.mp4",
     "static/media/video_5.mp4": "/happy/static/media/video_5.e7f5082c6006b182a50a.mp4",
@@ -9,7 +9,6 @@
     "static/media/video_2.mp4": "/happy/static/media/video_2.6250ca0fad55da4ee3b8.mp4",
     "static/media/mainScreen.png": "/happy/static/media/mainScreen.266ec1b2c2b2e4e47cbf.png",
     "static/media/1.png": "/happy/static/media/1.178a094a2a91e01551f4.png",
-    "static/media/slide_0.png": "/happy/static/media/slide_0.183f823243eb87159b15.png",
     "static/media/slide_1.png": "/happy/static/media/slide_1.190f61f8187a289a0b22.png",
     "static/media/2.png": "/happy/static/media/2.674e0169612782dd49f1.png",
     "static/media/littleMermaid.png": "/happy/static/media/littleMermaid.a0e2050492b23c466a65.png",
@@ -23,7 +22,6 @@
     "static/media/youTube.png": "/happy/static/media/youTube.6ac520022c5f700fee64.png",
     "static/media/7.png": "/happy/static/media/7.d1539ba81764f28004db.png",
     "static/media/11.png": "/happy/static/media/11.79b96f7c681d5d39e0fb.png",
-    "static/media/slide_4.png": "/happy/static/media/slide_4.1d01c6638125ac882536.png",
     "static/media/14.png": "/happy/static/media/14.5f25850759975f7a7ef4.png",
     "static/media/minecraft.png": "/happy/static/media/minecraft.d2a54708732730278824.png",
     "static/media/spiderMan.png": "/happy/static/media/spiderMan.cfb8e132440bc1fc445e.png",
@@ -56,11 +54,11 @@
     "static/media/right_arrow.svg": "/happy/static/media/right_arrow.df21c31d0baf18a82a07c6ad35c455e0.svg",
     "static/media/phone.svg": "/happy/static/media/phone.390848675aa9c1263d7c6ad32ba7bd2e.svg",
     "static/media/play.svg": "/happy/static/media/play.340280717916f769c35484466255d820.svg",
-    "main.1e0dd274.css.map": "/happy/static/css/main.1e0dd274.css.map",
-    "main.14fe7e96.js.map": "/happy/static/js/main.14fe7e96.js.map"
+    "main.cddfa459.css.map": "/happy/static/css/main.cddfa459.css.map",
+    "main.7aebc4ed.js.map": "/happy/static/js/main.7aebc4ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e0dd274.css",
-    "static/js/main.14fe7e96.js"
+    "static/css/main.cddfa459.css",
+    "static/js/main.7aebc4ed.js"
   ]
 }
