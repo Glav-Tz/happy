@@ -2,7 +2,11 @@ import { Map, Placemark, YMaps } from '@pbe/react-yandex-maps';
 import WeAreTouch from '../WeAreTouch';
 import styles from './Contacts.module.scss';
 
-const Contacts = () => {
+type Props = {
+  setIsActiveCheck: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const Contacts = ({ setIsActiveCheck }: Props) => {
   return (
     <section id="contacts" className={`${styles.reviews} ${styles.container}`}>
       <div className={styles.title}>Наши контакты</div>
@@ -43,7 +47,10 @@ const Contacts = () => {
           />
         </Map>
       </YMaps>
-      <WeAreTouch className={styles.coordinates} />
+      <WeAreTouch
+        setIsActiveCheck={setIsActiveCheck}
+        className={styles.coordinates}
+      />
     </section>
   );
 };

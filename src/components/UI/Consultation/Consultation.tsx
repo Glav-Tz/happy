@@ -10,6 +10,10 @@ import { ReactComponent as TelegramIcon } from '../../../assets/icon/messengers/
 import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/messengers/color/wa.svg';
 import Button from '../Button';
 
+type Props = {
+  setIsActiveCheck: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
 const openWhatsApp = (e: React.SyntheticEvent) => {
   e.preventDefault();
 
@@ -24,9 +28,8 @@ const openTelegram = (e: React.SyntheticEvent) => {
   window.open('https://t.me/animatory_tuapse');
 };
 
-const Consultation = () => {
+const Consultation = ({ setIsActiveCheck }: Props) => {
   const [phone, setPhone] = useState('');
-  const [isDisable, setIsDisable] = useState(false);
 
   const formRef = useRef<HTMLFormElement | null>(null);
 
@@ -44,7 +47,7 @@ const Consultation = () => {
         .then(
           (result) => {
             if (result.status === 200) {
-              setIsDisable(true);
+              setIsActiveCheck(true);
               setPhone('');
             }
           },
@@ -90,7 +93,6 @@ const Consultation = () => {
                 containerClass={styles.phone}
                 inputClass={styles.phone_input}
                 dropdownStyle={{ display: 'none' }}
-                disabled={isDisable}
                 inputProps={{
                   name: 'telephone',
                 }}
@@ -100,7 +102,6 @@ const Consultation = () => {
               className={styles.dtnPhone}
               type="submit"
               value="Отправить"
-              disabled={isDisable}
             />
           </form>
           <div className={styles.dtnWrapper}>

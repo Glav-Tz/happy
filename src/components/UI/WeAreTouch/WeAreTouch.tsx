@@ -10,6 +10,7 @@ import styles from './WeAreTouch.module.scss';
 
 type Props = {
   className?: string;
+  setIsActiveCheck: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 const openWhatsApp = (e: React.SyntheticEvent) => {
@@ -42,8 +43,7 @@ const openInstagram = (e: React.SyntheticEvent) => {
   );
 };
 
-const WeAreTouch = ({ className }: Props) => {
-  const [isDisable, setIsDisable] = useState(false);
+const WeAreTouch = ({ className, setIsActiveCheck }: Props) => {
   const [mail, setMail] = useState('');
   const [requestText, setRequestText] = useState('');
   const externalClasses = [styles.weAreTouch, className];
@@ -64,7 +64,7 @@ const WeAreTouch = ({ className }: Props) => {
         .then(
           (result) => {
             if (result.status === 200) {
-              setIsDisable(true);
+              setIsActiveCheck(true);
               formRef.current?.reset();
             }
           },
@@ -108,8 +108,7 @@ const WeAreTouch = ({ className }: Props) => {
           id="email"
           value={mail}
           onChange={(event) => setMail(event.currentTarget.value)}
-          placeholder="Ваш email"
-          disabled={isDisable}
+          placeholder="Телефон"
           name="email"
         />
       </label>
@@ -120,18 +119,12 @@ const WeAreTouch = ({ className }: Props) => {
           id="requestText"
           value={requestText}
           onChange={(event) => setRequestText(event.currentTarget.value)}
-          placeholder="Ваш вопрос"
-          disabled={isDisable}
+          placeholder="Комментарий"
           name="massage"
         />
       </label>
 
-      <input
-        disabled={isDisable}
-        className={styles.btnSubmit}
-        type="submit"
-        value="Отправить"
-      />
+      <input className={styles.btnSubmit} type="submit" value="Отправить" />
     </form>
   );
 };
