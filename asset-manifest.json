@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/happy/static/css/main.cddfa459.css",
-    "main.js": "/happy/static/js/main.7aebc4ed.js",
+    "main.css": "/happy/static/css/main.3e132009.css",
+    "main.js": "/happy/static/js/main.a51f4306.js",
     "static/media/video_1.mp4": "/happy/static/media/video_1.488e6992fdef1ba260db.mp4",
     "static/media/video_4.mp4": "/happy/static/media/video_4.546dc236a9bc25d077ab.mp4",
     "static/media/video_5.mp4": "/happy/static/media/video_5.e7f5082c6006b182a50a.mp4",
@@ -54,11 +54,11 @@
     "static/media/right_arrow.svg": "/happy/static/media/right_arrow.df21c31d0baf18a82a07c6ad35c455e0.svg",
     "static/media/phone.svg": "/happy/static/media/phone.390848675aa9c1263d7c6ad32ba7bd2e.svg",
     "static/media/play.svg": "/happy/static/media/play.340280717916f769c35484466255d820.svg",
-    "main.cddfa459.css.map": "/happy/static/css/main.cddfa459.css.map",
-    "main.7aebc4ed.js.map": "/happy/static/js/main.7aebc4ed.js.map"
+    "main.3e132009.css.map": "/happy/static/css/main.3e132009.css.map",
+    "main.a51f4306.js.map": "/happy/static/js/main.a51f4306.js.map"
   },
   "entrypoints": [
-    "static/css/main.cddfa459.css",
-    "static/js/main.7aebc4ed.js"
+    "static/css/main.3e132009.css",
+    "static/js/main.a51f4306.js"
   ]
 }
