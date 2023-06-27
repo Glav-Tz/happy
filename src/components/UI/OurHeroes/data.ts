@@ -73,7 +73,7 @@ const hero = [
     consistsOfGroups: [0, 3],
   },
   {
-    imgCharacter: 'youTube',
+    imgCharacter: 'youTube2',
     characterName: 'Yotube Челленджи',
     descShow:
       'Самые популярные челленджи в стиле ВладаА4 и других известных блогеров',
@@ -104,6 +104,160 @@ const hero = [
     descShow: 'Путешествие в подводный мир удивительной Атлантики',
     consistsOfGroups: [6],
   },
+  {
+    imgCharacter: '2cats',
+    characterName: '2 рыжих кота',
+    descShow:
+      'Какими должны быть котики? Что они любят? Малыши узнают вместе с нашими  веселыми котами',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'antistress',
+    characterName: 'антистресс-пати',
+    descShow:
+      'Pop-it, паззлы, головоломки, сквиши и мячики помогут весело провести время и успокоить нервы',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'ladyBug',
+    characterName: 'Леди баг',
+    descShow:
+      'Обожаемая всеми Леди Баг поделиться секретами своих суперспособностей',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'wednesday',
+    characterName: 'Уэнздей',
+    descShow: 'Кровавая вечеринка для всей семьи',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'blogging',
+    characterName: 'Блогерская вечеринка',
+    descShow:
+      'Познакомимся со всеми соц-сетями и узнаем, как стать    популярными в каждой из них',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'littleMermaid',
+    characterName: 'Likee-вечеринка',
+    descShow:
+      'Самые свежие тренды, танцевальная музыка, море лайков и позитива',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'youTube',
+    characterName: 'Yotube детский',
+    descShow: 'YouTube-челленджи, адаптированные для детей от 5 до 8 лет',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'pirates',
+    characterName: 'Пиратский квест',
+    descShow:
+      'Кто не мечтал отправится в путешествие и отыскать настоящий пиратский клад?',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'paleontologists',
+    characterName: 'Дино-Пати',
+    descShow:
+      'Отыщите следы динозавров вместе с нашими веселыми исследователями',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'pajama',
+    characterName: 'Пижамная вечеринка',
+    descShow: 'Бой подушками, любимые игрушки и другие ”пижамные” развлечения',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'harry',
+    characterName: 'Гарри Поттер',
+    descShow:
+      'Погрузись в мир волшебства Хогвартс с самым известным волшебником',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'harley',
+    characterName: 'Харли квин',
+    descShow: 'Немного похулиганим вместе с очаровательной Харли Квин',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'football',
+    characterName: 'Футбольная вечеринка',
+    descShow:
+      'Стань крутым футболистом и победи команду соперников в настоящем матче',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'squid',
+    characterName: 'Игра в кальмара',
+    descShow:
+      'Хотите пощекотать нервы и погрузиться в атмосферу      нашумевшего сериала?',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'mafia',
+    characterName: 'Мафия',
+    descShow:
+      'Город засыпает, просыпается мафия... а ты сможешь вычислить опасную группировку?',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'rainbow',
+    characterName: 'Радужные друзья',
+    descShow: 'Познакомься со всеми друзьями из хоррор игры от Роблокс',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'supers',
+    characterName: 'Супермен и супергерл',
+    descShow:
+      'Супергеройская игровая программа по мотивам любимого мультфильма',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'Thor',
+    characterName: 'Тор',
+    descShow:
+      'Эффектный супергерой с гигантским молотом научит управлять молниями',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'snowWhite',
+    characterName: 'Белоснежка',
+    descShow:
+      'Путешествие в сказочный лес вместе с принцессой Белоснежкой и 7-ю гномами',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'rapunzel',
+    characterName: 'Рапунцель',
+    descShow:
+      'Хамелеончик Паскаль, боевая сковородка - что еще приготовила девочкам Рапунцель?',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'elsa',
+    characterName: 'Эльза',
+    descShow:
+      'Снежная буря, сугробы, игры в снежки в любое время года вместе с принцессой Эльзой',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'moana',
+    characterName: 'Моана',
+    descShow: 'Отправимся в морское путешествие следом за бесстрашной Моаной?',
+    consistsOfGroups: [6],
+  },
+  {
+    imgCharacter: 'enchantimals',
+    characterName: 'Данесса Олени',
+    descShow: 'Отправьтесь в удивительный мир куколок Энчантималс с Данессой',
+    consistsOfGroups: [6],
+  },
 ];
 
-export { hero, categories };
+export { categories, hero };
