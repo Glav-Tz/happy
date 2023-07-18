@@ -2,7 +2,7 @@
 /* eslint-disable import/no-dynamic-require */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import { useRef, useState, RefObject } from 'react';
+import { RefObject, useRef, useState } from 'react';
 
 import ButtonVideo from '../ButtonVideo';
 import styles from './VideoElement.module.scss';
@@ -30,7 +30,7 @@ const VideoElement = ({ nameVideo }: Props) => {
           videoManagement(videoRef);
           setIsPlayer((prev) => !prev);
         }}
-        className={isPlayer ? styles.backgroundHide : styles.backgroundShow}
+        className={styles.backgroundShow}
       />
       <ButtonVideo
         onClick={() => {

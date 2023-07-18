@@ -23,12 +23,39 @@
 }
 
 .sliderVideo {
+  position: relative;
   margin: 50px 0 0 0;
+  max-width: 1920px;
+}
 
-  max-width: 1000px;
-  // display: flex;
-  // align-items: center;
-  // gap: 30px;
+.wrapperMainSlideBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  gap: 315px;
+
+  pointer-events: none;
+}
+
+.mainSlideBtn {
+  width: 74px;
+  height: 74px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: #ffffff;
+  box-shadow: 0 4px 76px rgba(211, 46, 135, 0.3);
+
+  pointer-events: all;
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
