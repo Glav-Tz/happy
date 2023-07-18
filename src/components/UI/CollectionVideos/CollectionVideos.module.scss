@@ -1,4 +1,4 @@
-@import '../../../styles/App.scss';
+@import "../../../styles/App.scss";
 
 .collectionVideos {
   padding: 90px 0 0 0;
@@ -9,7 +9,7 @@
 
   background-color: #f9e9f7;
 
-  overflow:hidden
+  overflow: hidden;
 }
 
 .title {
@@ -25,9 +25,10 @@
 .sliderVideo {
   margin: 50px 0 0 0;
 
-  display: flex;
-  align-items: center;
-  gap: 30px;
+  max-width: 1000px;
+  // display: flex;
+  // align-items: center;
+  // gap: 30px;
 }
 
 @media (max-width: 600px) {
