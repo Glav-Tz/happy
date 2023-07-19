@@ -1,6 +1,6 @@
 /* eslint-disable import/no-dynamic-require */
 /* eslint-disable global-require */
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import Slider from 'react-slick';
 
 import 'slick-carousel/slick/slick-theme.css';
@@ -15,7 +15,7 @@ import VideoElement from './VideoElement';
 import dataOfCarousel from './data';
 
 const setting = {
-  // centerMode: true,
+  centerMode: true,
   dots: false,
   arrows: false,
   infinite: true,
@@ -27,10 +27,11 @@ const setting = {
 };
 
 const CollectionVideos = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
   const slider = useRef<Slider | null>(null);
 
-  const afterChangeEvent = (currentSlide: number) => {
-    console.log(currentSlide);
+  const afterChangeEvent = (slide: number) => {
+    setCurrentSlide(slide);
   };
 
   return (
@@ -46,7 +47,12 @@ const CollectionVideos = () => {
             const { nameVideo } = element;
             return (
               <div>
-                <VideoElement key={index} nameVideo={nameVideo} />
+                <VideoElement
+                  currentSlide={currentSlide}
+                  id={index}
+                  key={index}
+                  nameVideo={nameVideo}
+                />
               </div>
             );
           })}

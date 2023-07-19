@@ -9,9 +9,11 @@ import styles from './VideoElement.module.scss';
 
 type Props = {
   nameVideo: string;
+  id: number;
+  currentSlide: number;
 };
 
-const VideoElement = ({ nameVideo }: Props) => {
+const VideoElement = ({ nameVideo, id, currentSlide }: Props) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlayer, setIsPlayer] = useState(false);
 
@@ -30,7 +32,9 @@ const VideoElement = ({ nameVideo }: Props) => {
           videoManagement(videoRef);
           setIsPlayer((prev) => !prev);
         }}
-        className={styles.backgroundShow}
+        className={
+          id === currentSlide ? styles.backgroundHide : styles.backgroundShow
+        }
       />
       <ButtonVideo
         onClick={() => {
