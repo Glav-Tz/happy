@@ -2,7 +2,7 @@
 /* eslint-disable import/no-dynamic-require */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import { RefObject, useRef, useState } from 'react';
+import { RefObject, useEffect, useRef, useState } from 'react';
 
 import ButtonVideo from '../ButtonVideo';
 import styles from './VideoElement.module.scss';
@@ -16,6 +16,12 @@ type Props = {
 const VideoElement = ({ nameVideo, id, currentSlide }: Props) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlayer, setIsPlayer] = useState(false);
+
+  useEffect(() => {
+    if (id !== currentSlide) {
+      videoRef.current?.pause();
+    }
+  }, [currentSlide, id]);
 
   const videoManagement = (videoLink: RefObject<HTMLVideoElement>) => {
     if (videoLink.current?.paused === true) {
@@ -36,13 +42,17 @@ const VideoElement = ({ nameVideo, id, currentSlide }: Props) => {
           id === currentSlide ? styles.backgroundHide : styles.backgroundShow
         }
       />
-      <ButtonVideo
-        onClick={() => {
-          videoManagement(videoRef);
-          setIsPlayer((prev) => !prev);
-        }}
-        className={isPlayer ? styles.dtnVideoHide : styles.dtnVideoShow}
-      />
+      {!isPlayer && (
+        <ButtonVideo
+          onClick={() => {
+            videoManagement(videoRef);
+            setIsPlayer((prev) => !prev);
+          }}
+          className={
+            id === currentSlide ? styles.dtnVideoShow : styles.dtnVideoHide
+          }
+        />
+      )}
       <video ref={videoRef} className={styles.videoShorts} muted loop>
         <source
           src={require(`../../../../assets/videos/shorts/${nameVideo}.mp4`)}
