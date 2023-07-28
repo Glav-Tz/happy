@@ -3,13 +3,17 @@ import ShowsAndMasterclasses from '../ShowsAndMasterclasses';
 import styles from './Activity.module.scss';
 
 type Props = {
-  setIsActiveCheck: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsActiveCheckPhone: React.Dispatch<React.SetStateAction<boolean>>;
+  isActiveCheckPhone: boolean;
 };
 
-const Activity = ({ setIsActiveCheck }: Props) => {
+const Activity = ({ setIsActiveCheckPhone, isActiveCheckPhone }: Props) => {
   return (
     <section className={`${styles.activity} ${styles.container}`}>
-      <Consultation setIsActiveCheck={setIsActiveCheck} />
+      <Consultation
+        isActiveCheckPhone={isActiveCheckPhone}
+        setIsActiveCheckPhone={setIsActiveCheckPhone}
+      />
       <ShowsAndMasterclasses />
     </section>
   );

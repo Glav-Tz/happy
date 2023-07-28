@@ -4,26 +4,38 @@ import Activity from '../../components/UI/Activity';
 import CollectionVideos from '../../components/UI/CollectionVideos';
 import Contacts from '../../components/UI/Contacts';
 import MainScreen from '../../components/UI/MainScreen';
-import ModalCostCalculation from '../../components/UI/ModalCostCalculation';
 import ModalCheck from '../../components/UI/ModalCheck';
+import ModalCostCalculation from '../../components/UI/ModalCostCalculation';
 import OurHeroes from '../../components/UI/OurHeroes';
 import Reviews from '../../components/UI/Reviews';
 
 const HomePage = () => {
   const [isActive, setIsActive] = useState(false);
-  const [isActiveCheck, setIsActiveCheck] = useState(false);
+  const [isActiveCheckPhone, setIsActiveCheckPhone] = useState(false);
+  const [isActiveCheckMessage, setIsActiveCheckMessage] = useState(false);
 
   return (
     <>
       <MainScreen />
       <OurHeroes />
-      <Activity setIsActiveCheck={setIsActiveCheck} />
+      <Activity
+        isActiveCheckPhone={isActiveCheckPhone}
+        setIsActiveCheckPhone={setIsActiveCheckPhone}
+      />
       <AboutOurTeam setIsActive={setIsActive} />
       <CollectionVideos />
       <Reviews />
-      <Contacts setIsActiveCheck={setIsActiveCheck} />
+      <Contacts
+        isActiveCheckMessage={isActiveCheckMessage}
+        setIsActiveCheckMessage={setIsActiveCheckMessage}
+      />
       {isActive && <ModalCostCalculation setIsActive={setIsActive} />}
-      {isActiveCheck && <ModalCheck setIsActiveCheck={setIsActiveCheck} />}
+      {(isActiveCheckPhone || isActiveCheckMessage) && (
+        <ModalCheck
+          setIsActiveCheckPhone={setIsActiveCheckPhone}
+          setIsActiveCheckMessage={setIsActiveCheckMessage}
+        />
+      )}
     </>
   );
 };

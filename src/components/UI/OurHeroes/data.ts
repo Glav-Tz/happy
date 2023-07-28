@@ -45,7 +45,7 @@ const hero = [
     characterName: 'Единорожка',
     descShow:
       'Самая нежная и волшебная программа, в которой собрано все, что любят Единороги',
-    consistsOfGroups: [0],
+    consistsOfGroups: [0, 2, 6],
   },
   {
     imgCharacter: 'puppyPatrol',
@@ -59,7 +59,7 @@ const hero = [
     characterName: 'Человек-Паук',
     descShow:
       'Гигантские паутины, умение лазить по стенам и другие “суперсилы” Человека Паука',
-    consistsOfGroups: [0, 4],
+    consistsOfGroups: [0, 2, 4],
   },
   {
     imgCharacter: 'haggiWaggi',
@@ -85,7 +85,7 @@ const hero = [
     characterName: 'Розочка',
     descShow:
       'Самая красочная программа с героями веселого и яркого мультфильма “Тролли”',
-    consistsOfGroups: [2],
+    consistsOfGroups: [2, 6],
   },
   {
     imgCharacter: 'brawlStars',
@@ -124,7 +124,7 @@ const hero = [
     characterName: 'Леди баг',
     descShow:
       'Обожаемая всеми Леди Баг поделиться секретами своих суперспособностей',
-    consistsOfGroups: [2, 4],
+    consistsOfGroups: [2, 4, 6],
   },
   {
     imgCharacter: 'wednesday',
@@ -137,14 +137,14 @@ const hero = [
     characterName: 'Блогерская вечеринка',
     descShow:
       'Познакомимся со всеми соц-сетями и узнаем, как стать    популярными в каждой из них',
-    consistsOfGroups: [1],
+    consistsOfGroups: [1, 7],
   },
   {
     imgCharacter: 'likes',
     characterName: 'Likee-вечеринка',
     descShow:
       'Самые свежие тренды, танцевальная музыка, море лайков и позитива',
-    consistsOfGroups: [7],
+    consistsOfGroups: [1, 7],
   },
   {
     imgCharacter: 'youTube',
@@ -183,14 +183,14 @@ const hero = [
     imgCharacter: 'harley',
     characterName: 'Харли квин',
     descShow: 'Немного похулиганим вместе с очаровательной Харли Квин',
-    consistsOfGroups: [4],
+    consistsOfGroups: [4, 5],
   },
   {
     imgCharacter: 'football',
     characterName: 'Футбольная вечеринка',
     descShow:
       'Стань крутым футболистом и победи команду соперников в настоящем матче',
-    consistsOfGroups: [5],
+    consistsOfGroups: [1, 5],
   },
   {
     imgCharacter: 'squid',

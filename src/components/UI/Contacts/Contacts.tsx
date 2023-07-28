@@ -3,10 +3,11 @@ import WeAreTouch from '../WeAreTouch';
 import styles from './Contacts.module.scss';
 
 type Props = {
-  setIsActiveCheck: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsActiveCheckMessage: React.Dispatch<React.SetStateAction<boolean>>;
+  isActiveCheckMessage: boolean;
 };
 
-const Contacts = ({ setIsActiveCheck }: Props) => {
+const Contacts = ({ setIsActiveCheckMessage, isActiveCheckMessage }: Props) => {
   return (
     <section id="contacts" className={`${styles.reviews} ${styles.container}`}>
       <div className={styles.title}>Наши контакты</div>
@@ -48,7 +49,8 @@ const Contacts = ({ setIsActiveCheck }: Props) => {
         </Map>
       </YMaps>
       <WeAreTouch
-        setIsActiveCheck={setIsActiveCheck}
+        setIsActiveCheckMessage={setIsActiveCheckMessage}
+        isActiveCheckMessage={isActiveCheckMessage}
         className={styles.coordinates}
       />
     </section>

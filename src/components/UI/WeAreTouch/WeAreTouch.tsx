@@ -10,7 +10,8 @@ import styles from './WeAreTouch.module.scss';
 
 type Props = {
   className?: string;
-  setIsActiveCheck: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsActiveCheckMessage: React.Dispatch<React.SetStateAction<boolean>>;
+  isActiveCheckMessage: boolean;
 };
 
 const openWhatsApp = (e: React.SyntheticEvent) => {
@@ -43,7 +44,11 @@ const openInstagram = (e: React.SyntheticEvent) => {
   );
 };
 
-const WeAreTouch = ({ className, setIsActiveCheck }: Props) => {
+const WeAreTouch = ({
+  className,
+  setIsActiveCheckMessage,
+  isActiveCheckMessage,
+}: Props) => {
   const [mail, setMail] = useState('');
   const [requestText, setRequestText] = useState('');
   const externalClasses = [styles.weAreTouch, className];
@@ -64,8 +69,9 @@ const WeAreTouch = ({ className, setIsActiveCheck }: Props) => {
         .then(
           (result) => {
             if (result.status === 200) {
-              setIsActiveCheck(true);
-              formRef.current?.reset();
+              setIsActiveCheckMessage(true);
+              setMail('');
+              setRequestText('');
             }
           },
           (error) => {
@@ -103,6 +109,7 @@ const WeAreTouch = ({ className, setIsActiveCheck }: Props) => {
 
       <label htmlFor="email">
         <input
+          disabled={isActiveCheckMessage}
           className={styles.email}
           type="email"
           id="email"
@@ -115,6 +122,7 @@ const WeAreTouch = ({ className, setIsActiveCheck }: Props) => {
 
       <label htmlFor="requestText">
         <textarea
+          disabled={isActiveCheckMessage}
           className={styles.requestText}
           id="requestText"
           value={requestText}
@@ -124,7 +132,12 @@ const WeAreTouch = ({ className, setIsActiveCheck }: Props) => {
         />
       </label>
 
-      <input className={styles.btnSubmit} type="submit" value="Отправить" />
+      <input
+        disabled={isActiveCheckMessage}
+        className={styles.btnSubmit}
+        type="submit"
+        value="Отправить"
+      />
     </form>
   );
 };
