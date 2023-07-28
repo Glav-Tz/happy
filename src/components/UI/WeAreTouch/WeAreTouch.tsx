@@ -1,5 +1,7 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
+import PhoneInput from 'react-phone-input-2';
 
 import { ReactComponent as InstagramIcon } from '../../../assets/icon/messengers/color/inst.svg';
 import { ReactComponent as TelegramIcon } from '../../../assets/icon/messengers/color/te.svg';
@@ -49,7 +51,7 @@ const WeAreTouch = ({
   setIsActiveCheckMessage,
   isActiveCheckMessage,
 }: Props) => {
-  const [mail, setMail] = useState('');
+  const [phone, setPhone] = useState('');
   const [requestText, setRequestText] = useState('');
   const externalClasses = [styles.weAreTouch, className];
 
@@ -70,7 +72,7 @@ const WeAreTouch = ({
           (result) => {
             if (result.status === 200) {
               setIsActiveCheckMessage(true);
-              setMail('');
+              setPhone('');
               setRequestText('');
             }
           },
@@ -108,15 +110,21 @@ const WeAreTouch = ({
       </div>
 
       <label htmlFor="email">
-        <input
+        <PhoneInput
+          // countryCodeEditable={false}
+          // country=""
+          disableDropdown
+          specialLabel=""
+          placeholder="+7 (___) ___ - __ - __"
+          value={phone}
+          onChange={(value) => setPhone(value)}
+          containerClass={styles.phone}
+          inputClass={styles.phone_input}
+          dropdownStyle={{ display: 'none' }}
+          inputProps={{
+            name: 'email',
+          }}
           disabled={isActiveCheckMessage}
-          className={styles.email}
-          type="email"
-          id="email"
-          value={mail}
-          onChange={(event) => setMail(event.currentTarget.value)}
-          placeholder="Телефон"
-          name="email"
         />
       </label>
 

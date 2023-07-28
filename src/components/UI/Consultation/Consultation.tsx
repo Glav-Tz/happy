@@ -84,10 +84,10 @@ const Consultation = ({ setIsActiveCheckPhone, isActiveCheckPhone }: Props) => {
           >
             <label htmlFor="phone">
               <PhoneInput
-                countryCodeEditable={false}
+                // countryCodeEditable={false}
+                // country="ru"
                 specialLabel=""
                 placeholder="+7 (___) ___ - __ - __"
-                country="ru"
                 disableDropdown
                 value={phone}
                 onChange={(value) => setPhone(value)}

@@ -62,4 +62,8 @@
   .title {
     font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (600 - 320)));
   }
+
+  .wrapperMainSlideBtn {
+    gap: 200px;
+  }
 }

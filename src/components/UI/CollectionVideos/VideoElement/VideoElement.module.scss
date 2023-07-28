@@ -20,6 +20,13 @@
   }
 }
 
+@media (max-width: 600px) {
+  .videoWrapper {
+    min-height: 370px;
+    min-width: 210px;
+  }
+}
+
 .backgroundShow {
   position: absolute;
 

@@ -9,29 +9,34 @@ import 'slick-carousel/slick/slick.css';
 import { ReactComponent as LeftArrow } from '../../../assets/icon/arrow/left_arrow.svg';
 import { ReactComponent as RightArrow } from '../../../assets/icon/arrow/right_arrow.svg';
 
+import { useIsMobile } from '../../../helpFunction/hooks';
+
 import styles from './CollectionVideos.module.scss';
 import './Slider.css';
 import VideoElement from './VideoElement';
 import dataOfCarousel from './data';
 
-const setting = {
-  centerMode: true,
-  dots: false,
-  arrows: false,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  cssEase: 'linear',
-  className: 'center',
-};
-
 const CollectionVideos = () => {
+  const isMobile = useIsMobile();
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const slider = useRef<Slider | null>(null);
 
   const afterChangeEvent = (slide: number) => {
     setCurrentSlide(slide);
+  };
+
+  const setting = {
+    centerMode: true,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    cssEase: 'linear',
+    className: 'center',
+    centerPadding: isMobile ? '250px' : '50px',
   };
 
   return (
@@ -46,11 +51,10 @@ const CollectionVideos = () => {
           {dataOfCarousel.map((element, index) => {
             const { nameVideo } = element;
             return (
-              <div>
+              <div key={index}>
                 <VideoElement
                   currentSlide={currentSlide}
                   id={index}
-                  key={index}
                   nameVideo={nameVideo}
                 />
               </div>

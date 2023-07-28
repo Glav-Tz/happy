@@ -151,24 +151,6 @@
   fill: #e94062;
 }
 
-.email {
-  width: 500px;
-  height: 60px;
-
-  margin: 20px 0 0 0;
-  padding: 5px 20px;
-
-  background-color: #f5f9f9;
-
-  border-radius: 40px;
-
-  font-weight: 700;
-  font-size: 16px;
-
-  outline: none;
-  border: none;
-}
-
 .requestText {
   width: 500px;
   height: 120px;
@@ -220,6 +202,35 @@
   }
 }
 
+.phone {
+  margin: 20px 0 0 0;
+  padding: 5px 20px;
+
+  width: 500px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+
+  border: none;
+  outline: none;
+  border-radius: 40px;
+
+  background: #f5f9f9;
+}
+
+.phone_input {
+  padding-left: 20px;
+
+  font-weight: 700;
+  font-size: 16px;
+
+  border: none;
+  outline: none;
+
+  background: #f5f9f9;
+}
+
 @media (max-width: 650px) {
   .wrapperSocialNetwork {
     display: grid;
@@ -241,7 +252,7 @@
     border-radius: 30px;
   }
 
-  .email {
+  .phone {
     width: calc(260px + (500 - 260) * ((100vw - 320px) / (650 - 320)));
   }
 
