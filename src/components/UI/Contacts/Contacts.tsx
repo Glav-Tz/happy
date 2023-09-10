@@ -33,7 +33,7 @@ const Contacts = ({ setIsActiveCheckMessage, isActiveCheckMessage }: Props) => {
           <Placemark
             modules={['geoObject.addon.balloon']}
             properties={{
-              balloonContentHeader: 'Индустрия праздника',
+              balloonContentHeader: 'Искусство праздника',
               balloonContentBody: 'Устройте праздник Вашим детям',
               balloonContentFooter: 'Позвоните и мы посмешим к Вам',
             }}

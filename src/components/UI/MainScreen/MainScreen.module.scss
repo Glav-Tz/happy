@@ -9,7 +9,8 @@
   justify-content: flex-end;
   align-items: center;
 
-  background: url(../../../assets/img/mainScreen.jpg) center center/cover no-repeat;
+  background: url(../../../assets/img/mainScreen.webp) center center/cover no-repeat;
+  background-color: #5ec0ba;
 }
 
 .title {
@@ -56,5 +57,17 @@
 
   .btnMainScreen {
     padding: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .mainScreen {
+    height: 790px;
+  }
+}
+
+@media (max-width: 350px) {
+  .mainScreen {
+    height: 770px;
   }
 }

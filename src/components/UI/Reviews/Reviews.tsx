@@ -1,6 +1,10 @@
 import styles from './Reviews.module.scss';
 
 const Reviews = () => {
+  // window.onload = () => {
+  //   console.log(123);
+  // };
+
   return (
     <section id="reviews" className={`${styles.reviews} ${styles.container}`}>
       <div className={styles.title}>Реальные отзывы</div>

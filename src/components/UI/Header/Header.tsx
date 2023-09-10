@@ -1,10 +1,10 @@
 /* eslint-disable global-require */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import styles from './Header.module.scss';
-
-import { ReactComponent as LogoIcon } from '../../../assets/icon/logo.svg';
 import { ReactComponent as WhatsAppIcon } from '../../../assets/icon/messengers/color/wa.svg';
 import { ReactComponent as PhoneIcon } from '../../../assets/icon/phone.svg';
+import styles from './Header.module.scss';
+
+import LogoIcon from '../../../assets/img/logo.png';
 
 const openWhatsApp = (e: React.SyntheticEvent) => {
   e.preventDefault();
@@ -41,7 +41,7 @@ const Header = () => {
             </a>
           </div>
 
-          <LogoIcon className={styles.logo} />
+          <img src={LogoIcon} alt="main logo" className={styles.logo} />
 
           <div className={styles.navigateBlocks}>
             <a
