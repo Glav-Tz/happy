@@ -29,12 +29,6 @@ const careuselValueCollectionVideos = [
   {
     nameVideo: 'video_10',
   },
-  {
-    nameVideo: 'video_11',
-  },
-  {
-    nameVideo: 'video_12',
-  },
 ];
 
 export default careuselValueCollectionVideos;
